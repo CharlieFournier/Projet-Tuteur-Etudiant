@@ -18,10 +18,25 @@
             <div class="col-md-2"></div>
             <div class="col-md-8 bg-warning">
                 <div class="p-3">Inscription</div>
-                <div class="p-3">Nom d'utilisateur</div>
-                <div class="p-3">Address courriel</div>
-                <div class="p-3">Mot de passe</div>
-                <div class="p-3">Confirmation du mot de passe</div>
+                <div class="p-3">
+                    <label class="form-label" for="username">Nom d'utilisateur : </label>
+                    <input class="form-control" type="text" id="username" name="username">
+                </div>
+                <div class="p-3">
+                    <label class="form-label" for="addressCourriel">Address Courriel : </label>
+                    <input class="form-control" type="text" id="addressCourriel" name="addressCourriel">
+                </div>
+                <div class="p-3">
+                    <label class="form-label" for="motdepasse">Mot de Passe : </label>
+                    <input class="form-control" type="password" id="motdepasse" name="motdepasse">
+                </div>
+                <div class="p-3">
+                    <label class="form-label" for="confirme">Confirmation du Mot de Passe : </label>
+                    <input class="form-control" type="password" id="confirme" name="confirme">
+                </div>
+                <div class="p-3">
+                    <button class="btn btn-success" type="button">Inscription</button>
+                </div>
             </div>
             <div class="col-md-2"></div>
         </div>
