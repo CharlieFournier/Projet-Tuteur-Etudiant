@@ -32,7 +32,9 @@
                 </div>
                 
                 <div class="p-3 text-center">
-                    <button class="btn" style="background-color: rgba(255,192,203,0.5); border-color: black;" type="button">Inscription</button>
+                <a href="/Accueil"><button class="btn" style="background-color: rgba(255,192,203,0.5); border-color: black;" type="button">Inscription</button></a>
+
+                    
                 </div>
             </div>
 
