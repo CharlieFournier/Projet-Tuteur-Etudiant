@@ -12,7 +12,7 @@
     <div class="container-fluid h-100 ">
 
         <div class="row justify-content-center align-items-center h-100 ">
-            <div class="col-4" style="background-color: grey; border-radius: 20px;">
+            <div class="col-4 vitre" style="border-radius: 20px;">
                 <div class="p-3 text-center"><h1>Inscription</h1><hr/></div>
                 <div class="p-3">
                     <label class="form-label" for="username">Nom d'utilisateur : </label>
@@ -32,7 +32,7 @@
                 </div>
                 
                 <div class="p-3 text-center">
-                    <button class="btn" style="background-color: pink; border-color: black;" type="button">Inscription</button>
+                    <button class="btn" style="background-color: rgba(255,192,203,0.5); border-color: black;" type="button">Inscription</button>
                 </div>
             </div>
 
