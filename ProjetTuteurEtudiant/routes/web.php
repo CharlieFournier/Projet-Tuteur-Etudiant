@@ -9,7 +9,7 @@ use App\Models\Requete;
 
 
 
-Route::get('/', 
+Route::get('/accueil', 
 [RequetesController::class, 'index'])->name('Requetes.index');
 
 Route::get('/creation', 
@@ -20,12 +20,12 @@ Route::get('/creation',
 Route::get('/', function () {
     return view('index');
 });
-*/
+
 
 Route::get('/Accueil', function () {
     return view('Requetes/Accueil');
 });
-/*
+
 Route::get('/create', function(){
     return view('Requetes/create');
 });

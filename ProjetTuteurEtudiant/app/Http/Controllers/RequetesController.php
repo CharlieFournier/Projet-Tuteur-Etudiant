@@ -14,9 +14,9 @@ class RequetesController extends Controller
      */
     public function index()
     {
-        $requetes = Requete::all();
+        #$requetes = Requete::all();
 
-        return view('Requetes.index', compact('requete'));
+        return view('Requetes.accueil');
     }
 
     /**
