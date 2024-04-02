@@ -12,24 +12,19 @@
     <div class="container-fluid h-100 ">
 
         <div class="row justify-content-center align-items-center h-100 ">
-            <div class="col-4 blanc" style="border-radius: 20px;">
-                <div class="p-3 text-center"><h1>Inscription</h1><hr/></div>
+            <div class="col-4 blanc" style=" border-radius: 20px;">
+                <div class="p-3 text-center"><h1>Connexion Admin</h1><hr/></div>
+
                 <div class="p-3">
                     <label class="form-label" for="username">Nom d'utilisateur : </label>
                     <input class="form-control" type="text" id="username" name="username">
                 </div>
-                <div class="p-3">
-                    <label class="form-label" for="addressCourriel">Address Courriel : </label>
-                    <input class="form-control" type="text" id="addressCourriel" name="addressCourriel">
-                </div>
+                
                 <div class="p-3">
                     <label class="form-label" for="motdepasse">Mot de Passe : </label>
                     <input class="form-control" type="password" id="motdepasse" name="motdepasse">
                 </div>
-                <div class="p-3">
-                    <label class="form-label" for="confirme">Confirmation du Mot de Passe : </label>
-                    <input class="form-control" type="password" id="confirme" name="confirme">
-                </div>
+
                 
                 <div class="p-3 text-center">
                 <a href="{{route('Requetes.index')}}"><button class="btn" style="background-color: rgba(255,192,203,0.5); border-color: black;" type="button">S'inscrire</button></a>

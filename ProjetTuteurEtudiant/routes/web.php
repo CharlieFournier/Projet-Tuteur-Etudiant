@@ -27,3 +27,8 @@ Route::get('/accueilTuteur',
 
 Route::get('/accueilEtudiant', 
 [EtudiantsController::class, 'index'])->name('Etudiants.index');
+
+//------- Admins -------//
+
+Route::get('/adminlogin', 
+[AdminController::class, 'login'])->name('admin.login');
