@@ -32,7 +32,7 @@
                 </div>
                 
                 <div class="p-3 text-center">
-                <a href="/Accueil"><button class="btn" style="background-color: rgba(255,192,203,0.5); border-color: black;" type="button">Inscription</button></a>
+                <a href="{{route('Requetes.index')}}"><button class="btn" style="background-color: rgba(255,192,203,0.5); border-color: black;" type="button">Inscription</button></a>
 
                     
                 </div>
