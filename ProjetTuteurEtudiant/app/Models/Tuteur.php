@@ -7,7 +7,7 @@ use Illuminate\Database\Eloquent\Model;
 
 class Requete extends Model
 {
-    protected $fillable = ['Titre','matiere'];
+    protected $fillable = ['nom','mdp'];
     protected $table = 'test';
     use HasFactory;
 

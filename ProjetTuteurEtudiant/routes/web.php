@@ -7,7 +7,7 @@ use Illuminate\Support\Facades\Route;
 use Illuminate\Http\Request;
 use App\Models\Requete;
 
-
+//------- Demandes d'aides -------//
 
 Route::get('/accueil', 
 [RequetesController::class, 'index'])->name('Requetes.index');
@@ -15,18 +15,15 @@ Route::get('/accueil',
 Route::get('/creation', 
 [RequetesController::class, 'create'])->name('Requetes.create');
 
-//----------------------------------------------------------------
-/*
-Route::get('/', function () {
-    return view('index');
-});
+Route::get('/show', 
+[RequetesController::class, 'show'])->name('Requetes.show');
 
+//------- Tuteurs -------//
 
-Route::get('/Accueil', function () {
-    return view('Requetes/Accueil');
-});
+Route::get('/accueilTuteur', 
+[TuteursController::class, 'index'])->name('Tuteurs.index');
 
-Route::get('/create', function(){
-    return view('Requetes/create');
-});
-*/
+//------- Etudiants -------//
+
+Route::get('/accueilEtudiant', 
+[EtudiantsController::class, 'index'])->name('Etudiants.index');

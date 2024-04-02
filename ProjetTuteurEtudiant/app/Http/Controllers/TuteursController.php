@@ -2,21 +2,16 @@
 
 namespace App\Http\Controllers;
 
-use Illuminate\Support\Facades\Log;
-use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
-use App\Models\Requete;
 
-class RequetesController extends Controller
+class TuteursController extends Controller
 {
     /**
      * Display a listing of the resource.
      */
     public function index()
     {
-        $requetes = Requete::all();
-
-        return view('Requetes.accueil', compact('requetes'));
+        return view('Tuteurs.accueil');
     }
 
     /**
@@ -24,7 +19,7 @@ class RequetesController extends Controller
      */
     public function create()
     {
-        return View('Requetes.create');
+        //
     }
 
     /**
@@ -38,9 +33,9 @@ class RequetesController extends Controller
     /**
      * Display the specified resource.
      */
-    public function show()
+    public function show(string $id)
     {
-        return View('Requetes.show');
+        //
     }
 
     /**
