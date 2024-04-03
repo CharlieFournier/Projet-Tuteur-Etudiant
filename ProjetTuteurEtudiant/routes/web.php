@@ -23,6 +23,9 @@ Route::get('/show',
 Route::get('/accueilTuteur', 
 [TuteursController::class, 'index'])->name('Tuteurs.index');
 
+Route::get('/remunerationTuteur', 
+[TuteursController::class, 'remuneration'])->name('Tuteurs.remuneration');
+
 //------- Etudiants -------//
 
 Route::get('/accueilEtudiant', 
