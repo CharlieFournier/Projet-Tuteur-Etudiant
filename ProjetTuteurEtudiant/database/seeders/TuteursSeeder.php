@@ -16,8 +16,13 @@ class TuteursSeeder extends Seeder
         DB::table('tuteurs')->insert([
             [
             'id' => 1,
-            'user' => 'Meow',
+            'matricule' => '2052524',
+            'prenom' => 'Meow',
+            'nom' => 'Fournier',
+            'email' => 'Meow@Meow.com',
             'mdp' => 'Meow',
+            'grade'=> 'Enseignant',
+            'matiere' => 'Mathématiques',
             ]
             ]);
     }

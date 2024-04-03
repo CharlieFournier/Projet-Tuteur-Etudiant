@@ -57,8 +57,13 @@
                         <div class="col-12 card card-event-design text-center">
                             <h1 id="text-event "> Tuteurs </h1>
                         </div>
+                        
                             <ul>
-                                <li><a href="{{route('Tuteurs.index')}}">Tuteur 1 </a></li>
+                            @foreach($tuteurs as $tuteur)
+        
+                            <a href="{{route('Tuteurs.index')}}"><p>{{$tuteur->prenom}}</p></a>
+                                
+                            @endforeach
                             </ul>
                     </div>
                 </div>

@@ -13,8 +13,13 @@ return new class extends Migration
     {
         Schema::create('tuteurs', function (Blueprint $table) {
             $table->id();
-            $table->string('user','255');
+            $table->string('matricule','255');
+            $table->string('prenom','255');
+            $table->string('nom','255');
+            $table->string('email','255');
             $table->string('mdp','255');
+            $table->string('grade','255');
+            $table->string('matiere','255');
             $table->timestamps();
         });
     }
