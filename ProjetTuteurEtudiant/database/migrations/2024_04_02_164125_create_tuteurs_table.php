@@ -17,9 +17,8 @@ return new class extends Migration
             $table->string('prenom','255');
             $table->string('nom','255');
             $table->string('email','255');
-            $table->string('mdp','255');
-            $table->string('grade','255');
-            $table->string('matiere','255');
+            $table->string('pwd','255');
+            $table->string('nb_heures','255');
             $table->timestamps();
         });
     }

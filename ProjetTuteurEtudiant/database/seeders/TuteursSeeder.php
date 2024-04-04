@@ -20,9 +20,8 @@ class TuteursSeeder extends Seeder
             'prenom' => 'Meow',
             'nom' => 'Fournier',
             'email' => 'Meow@Meow.com',
-            'mdp' => 'Meow',
-            'grade'=> 'Enseignant',
-            'matiere' => 'Mathématiques',
+            'pwd' => 'Meow',
+            'nb_heures'=> '12',
             ]
             ]);
     }
