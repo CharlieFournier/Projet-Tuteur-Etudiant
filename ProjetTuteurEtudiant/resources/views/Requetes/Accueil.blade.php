@@ -64,7 +64,7 @@
                             <a href="{{route('Tuteurs.index', [$tuteur->prenom])}}"><p>{{$tuteur->prenom}}</p></a>
                                 
                             @endforeach
-                            </ul>
+                            </ul> 
                     </div>
                 </div>
                 <div class="row h-50">
