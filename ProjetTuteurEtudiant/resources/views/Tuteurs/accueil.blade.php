@@ -8,12 +8,11 @@
 </head>
 <body>
 
-<p>Prenom: {{$tuteurs[0]->prenom}}</p>
-<p>Nom: {{$tuteurs[0]->nom}}</p>
-<p>Matricule: {{$tuteurs[0]->matricule}}</p>
-<p>Em@il: {{$tuteurs[0]->email}}</p>
-<p>Grade: {{$tuteurs[0]->grade}}</p>
-<p>Matiere: {{$tuteurs[0]->matiere}}</p>
+<p>Prenom: {{$tuteur->prenom}}</p>
+<p>Nom: {{$tuteur->nom}}</p>
+<p>Matricule: {{$tuteur->matricule}}</p>
+<p>Em@il: {{$tuteur->email}}</p>
+
 
 </body>
 </html>

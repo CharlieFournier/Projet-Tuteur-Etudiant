@@ -25,7 +25,7 @@ Route::get('/show',
 //------- Tuteurs -------//
 
 Route::get('/Tuteur/{tuteur}', 
-[TuteursController::class, 'index'])->name('Tuteurs.index');
+[TuteursController::class, 'show'])->name('Tuteurs.show');
 
 //------- Etudiants -------//
 

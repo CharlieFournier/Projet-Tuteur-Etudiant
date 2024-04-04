@@ -61,7 +61,7 @@
                             <ul>
                             @foreach($tuteurs as $tuteur)
         
-                            <a href="{{route('Tuteurs.index', [$tuteur->prenom])}}"><p>{{$tuteur->prenom}}</p></a>
+                            <a href="{{route('Tuteurs.show', [$tuteur->nom])}}"><p>{{$tuteur->prenom}} {{$tuteur->nom}}</p></a>
                                 
                             @endforeach
                             </ul> 

@@ -45,8 +45,8 @@ class TuteursController extends Controller
      */
     public function show($tuteurNom)
     {
-        $tuteur = tuteur::where('nom', $tuteurNom)->firstOrFail();
-        return view('Tuteurs.show', compact('tuteur'));
+        $tuteur = Tuteur::where('nom', $tuteurNom)->firstOrFail();
+        return view('Tuteurs.accueil', compact('tuteur'));
     }
 
     /**
