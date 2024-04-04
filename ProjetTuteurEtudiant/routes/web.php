@@ -3,6 +3,10 @@
 namespace App\Http\Controllers;
 
 use App\Http\Controllers\Controller;
+use App\Http\Controllers\AdminController;
+use App\Http\Controllers\EtudiantsController;
+use App\Http\Controllers\RequetesController;
+use App\Http\Controllers\TuteursController;
 use Illuminate\Support\Facades\Route;
 use Illuminate\Http\Request;
 use App\Models\Requete;
@@ -20,13 +24,13 @@ Route::get('/show',
 
 //------- Tuteurs -------//
 
-Route::get('/accueilTuteur', 
+Route::get('/Tuteur/{tuteur}', 
 [TuteursController::class, 'index'])->name('Tuteurs.index');
 
 //------- Etudiants -------//
 
 Route::get('/accueilEtudiant', 
-[EtudiantsController::class, 'index'])->name('Etudiants.index');
+[EtudiantsController::class, 'show'])->name('Etudiants.show');
 
 //------- Admins -------//
 
