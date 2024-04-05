@@ -11,47 +11,91 @@
 </head>
 <body>
 
-    <div class="container-fluid h-100">
-        <div class="row text-center h-100">
-            <div class="col-2 h-100 text-start card card-conteneur p-0">
+    <nav class="navbar navbar-expand-lg navbar-light cegep1 text-center">
+    <div class="container-fluid">
 
-                <div class="col-12 card card-event-design text-center">
-                    <h1 id="text-event "> Catégories </h1>
-                </div>
-            </div>
+        <a class="navbar-brand" href="#">Projet Tutorat</a>
+
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Accueil</a>
+            </li>
+            <li class="nav-item">
+            <a class="nav-link" href="#">Tuteurs</a>
+            </li>
+        </ul>
+
+        </div>
+        
+    </div>
+    </nav>
+    <div class="container-fluid h-100 cegep1">
+        <div class="row text-center h-100 cegep1">
+
                     
-            <div class="col-1"></div>
-            <div class="col-6">
+            <div class="col-10">
 
-                <div class="row h-25">
-                    <div class="col-12 card card-event-design text-center">
+                <div class="row h-15">
+                <div class="col-6 card card-event-design text-center">
+                        <h1 id="text-event "> Demande d'aide </h1>
+                    </div>
+                    <div class="col-6 card card-event-design text-center">
                         <h1 id="text-event "> Demande d'aide </h1>
                     </div>
                 </div>
 
-                <div class="row h-25">
-                    <div class="col-12 card card-event-design text-center">
-                    <a href="{{route('Requetes.show')}}"><h1 id="text-event "> Demande d'aide </h1></a>
-                         
+                <div class="row h-15">
+                <div class="col-6 card card-event-design text-center">
+                        <h1 id="text-event "> Demande d'aide </h1>
                     </div>
-                </div>
-
-                <div class="row h-25">
-                    <div class="col-12 card card-event-design text-center">
+                    <div class="col-6 card card-event-design text-center">
                         <h1 id="text-event "> Demande d'aide </h1>
                     </div>
                 </div>
 
-                <div class="row h-25">
-                    <div class="col-12 card card-event-design text-center">
+                <div class="row h-15">
+                    <div class="col-6 card card-event-design text-center">
+                        <h1 id="text-event "> Demande d'aide </h1>
+                    </div>
+                    <div class="col-6 card card-event-design text-center">
+                        <h1 id="text-event "> Demande d'aide </h1>
+                    </div>
+                </div>
+
+                <div class="row h-15">
+                <div class="col-6 card card-event-design text-center">
+                        <h1 id="text-event "> Demande d'aide </h1>
+                    </div>
+                    <div class="col-6 card card-event-design text-center">
+                        <h1 id="text-event "> Demande d'aide </h1>
+                    </div>
+                </div>
+                <div class="row h-15">
+                <div class="col-6 card card-event-design text-center">
+                        <h1 id="text-event "> Demande d'aide </h1>
+                    </div>
+                    <div class="col-6 card card-event-design text-center">
+                        <h1 id="text-event "> Demande d'aide </h1>
+                    </div>
+                </div>
+                <div class="row h-15">
+                <div class="col-6 card card-event-design text-center">
+                        <h1 id="text-event "> Demande d'aide </h1>
+                    </div>
+                    <div class="col-6 card card-event-design text-center">
                         <h1 id="text-event "> Demande d'aide </h1>
                     </div>
                 </div>
 
             </div>
-            <div class="col-1"></div>
             <div class="col-2">
-                <div class="row h-50">
+                <div class="row h-45">
                     <div class="col-12 text-start card card-conteneur text-center p-0">
 
                         <div class="col-12 card card-event-design text-center">
@@ -67,7 +111,7 @@
                             </ul> 
                     </div>
                 </div>
-                <div class="row h-50">
+                <div class="row h-45">
                     <div class="col-12 text-start card card-conteneur text-center p-0">
 
                         <div class="col-12 card card-event-design text-center">
