@@ -35,8 +35,3 @@ Route::get('/adminlogin',
 [AdminController::class, 'login'])->name('admin.login');
 
 //----- Connexion ------//
-Route::get('/inscription', 
-[RequetesController::class, 'login'])->name('Requetes.create');
-
-Route::get('/connexion', 
-[RequetesController::class, 'create'])->name('Requetes.create');
