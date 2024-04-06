@@ -15,8 +15,16 @@
             <div class="col-4 blanc" style="border-radius: 20px;">
                 <div class="p-3 text-center"><h1>Inscription</h1><hr/></div>
                 <div class="p-3">
-                    <label class="form-label" for="username">Nom d'utilisateur : </label>
-                    <input class="form-control" type="text" id="username" name="username">
+                    <label class="form-label" for="matricule">Matricule : </label>
+                    <input class="form-control" type="text" id="matricule" name="matricule">
+                </div>
+                <div class="p-3">
+                    <label class="form-label" for="prenom">Prénom : </label>
+                    <input class="form-control" type="text" id="prenom" name="prenom">
+                </div>
+                <div class="p-3">
+                    <label class="form-label" for="nom">Nom : </label>
+                    <input class="form-control" type="text" id="nom" name="nom">
                 </div>
                 <div class="p-3">
                     <label class="form-label" for="addressCourriel">Address Courriel : </label>

@@ -15,6 +15,7 @@ Route::get('/accueil',
 Route::get('/creation', 
 [RequetesController::class, 'create'])->name('Requetes.create');
 
+
 Route::get('/show', 
 [RequetesController::class, 'show'])->name('Requetes.show');
 
@@ -32,3 +33,10 @@ Route::get('/accueilEtudiant',
 
 Route::get('/adminlogin', 
 [AdminController::class, 'login'])->name('admin.login');
+
+//----- Connexion ------//
+Route::get('/inscription', 
+[RequetesController::class, 'login'])->name('Requetes.create');
+
+Route::get('/connexion', 
+[RequetesController::class, 'create'])->name('Requetes.create');
