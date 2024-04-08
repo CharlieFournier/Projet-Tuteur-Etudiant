@@ -36,12 +36,12 @@ Route::get('/remunerationTuteur',
 Route::get('/accueilEtudiant', 
 [EtudiantsController::class, 'show'])->name('Etudiants.show');
 
-//------- Admins -------//
 
-Route::get('/adminlogin', 
-[AdminController::class, 'login'])->name('admin.login');
+
+//----- Users ------//
+
+Route::get('/connexion', 
+[UsersController::class, 'login'])->name('users.login');
 
 Route::get('/inscription', 
-[AdminController::class, 'create'])->name('admin.create');
-
-//----- Connexion ------//
+[UsersController::class, 'create'])->name('users.create');
