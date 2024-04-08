@@ -1,14 +1,16 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Menu Étudiants</title>
-</head>
-<body>
+@extends('layouts.app')
 
-<h1> Étudiants </h1>
+@section('title','Page Etudiant')
 
-</body>
-</html>
+@section('contenu')
+
+<div class="container-fluid h-100">
+
+<p>Prenom: {{$etudiant->prenom}}</p>
+<p>Nom: {{$etudiant->nom}}</p>
+<p>Matricule: {{$etudiant->matricule}}</p>
+<p>Em@il: {{$etudiant->email}}</p>
+
+</div>
+
+@endsection

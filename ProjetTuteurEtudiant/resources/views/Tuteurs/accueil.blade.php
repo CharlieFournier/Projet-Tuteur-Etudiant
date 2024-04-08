@@ -10,6 +10,7 @@
 <p>Nom: {{$tuteur->nom}}</p>
 <p>Matricule: {{$tuteur->matricule}}</p>
 <p>Em@il: {{$tuteur->email}}</p>
+
 </div>
 
 @endsection
