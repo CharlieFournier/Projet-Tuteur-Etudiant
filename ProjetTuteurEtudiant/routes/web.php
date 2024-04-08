@@ -20,8 +20,6 @@ Route::get('/creation',
 [RequetesController::class, 'create'])->name('Requetes.create');
 
 
-Route::get('/show', 
-[RequetesController::class, 'show'])->name('Requetes.show');
 
 //------- Tuteurs -------//
 
@@ -33,9 +31,8 @@ Route::get('/remunerationTuteur',
 
 //------- Etudiants -------//
 
-Route::get('/accueilEtudiant', 
+Route::get('/accueilEtudiant/{etudiant}', 
 [EtudiantsController::class, 'show'])->name('Etudiants.show');
-
 
 
 //----- Users ------//
