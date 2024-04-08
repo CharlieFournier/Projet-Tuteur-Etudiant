@@ -1,8 +1,9 @@
 <?php
 
 namespace App\Http\Controllers;
-
+use App\Http\Controllers\Log;
 use Illuminate\Http\Request;
+use App\Models\Tuteur;
 
 class UsersController extends Controller
 {
@@ -37,11 +38,13 @@ class UsersController extends Controller
     {
         try 
         {
-            
+            $users = new Tuteur($request->all());
+            #Log::debug($users);
+            $users->save();
         }
         catch (\Throwable $e) 
         {
-            Log::debug($e);
+            #Log::debug($e);
         }
         return redirect()->route('Requetes.index');
     }
