@@ -31,7 +31,10 @@ Route::get('/accueilEtudiant',
 
 //------- Admins -------//
 
-Route::get('/adminlogin', 
+Route::get('/connexion', 
 [AdminController::class, 'login'])->name('admin.login');
+
+Route::get('/inscription', 
+[AdminController::class, 'create'])->name('admin.create');
 
 //----- Connexion ------//

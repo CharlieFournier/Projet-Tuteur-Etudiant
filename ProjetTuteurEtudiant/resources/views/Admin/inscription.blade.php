@@ -12,13 +12,13 @@
     <div class="container-fluid h-100 ">
 
         <div class="row justify-content-center align-items-center h-100 ">
-            <div class="col-4 blanc" style="border-radius: 20px;">
+            <div class="col-8 blanc" style="border-radius: 20px;">
                 <div class="p-3 text-center"><h1>Inscription</h1><hr/></div>
-                <div class="p-3">
+                <div class="col-4 p-3">
                     <label class="form-label" for="matricule">Matricule : </label>
                     <input class="form-control" type="text" id="matricule" name="matricule">
                 </div>
-                <div class="p-3">
+                <div class="col-4 p-3">
                     <label class="form-label" for="prenom">Prénom : </label>
                     <input class="form-control" type="text" id="prenom" name="prenom">
                 </div>
@@ -40,9 +40,9 @@
                 </div>
                 
                 <div class="p-3 text-center">
-                <a href="{{route('Requetes.index')}}"><button class="btn" style="background-color: rgba(255,192,203,0.5); border-color: black;" type="button">S'inscrire</button></a>
-
-                    
+                    <a href="{{route('Requetes.index')}}">
+                        <button class="btn" style="background-color: rgba(255,192,203,0.5); border-color: black;" type="button">S'inscrire</button>
+                    </a>
                 </div>
             </div>
 

@@ -27,9 +27,12 @@
 
                 
                 <div class="p-3 text-center">
-                <a href="{{route('Requetes.index')}}"><button class="btn" style="background-color: rgba(255,192,203,0.5); border-color: black;" type="button">S'inscrire</button></a>
-
-                    
+                    <a href="{{route('Requetes.index')}}">
+                        <button class="btn" style="background-color: rgba(255,192,203,0.5); border-color: black;" type="button">Se connecter</button>
+                    </a>
+                    <a href="{{route('admin.create')}}">
+                        <button class="btn" style="background-color: rgba(255,192,203,0.5); border-color: black;" type="button">S'inscrire</button>
+                    </a>
                 </div>
             </div>
 
