@@ -35,7 +35,15 @@ class UsersController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        try 
+        {
+            
+        }
+        catch (\Throwable $e) 
+        {
+            Log::debug($e);
+        }
+        return redirect()->route('Requetes.index');
     }
 
     /**

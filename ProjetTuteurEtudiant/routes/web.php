@@ -41,3 +41,6 @@ Route::get('/connexion',
 
 Route::get('/inscription', 
 [UsersController::class, 'create'])->name('users.create');
+
+Route::post('/user', 
+[UsersController::class, 'store'])->name('users.store');

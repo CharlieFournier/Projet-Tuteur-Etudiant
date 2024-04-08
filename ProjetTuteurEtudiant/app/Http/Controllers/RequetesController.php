@@ -32,7 +32,7 @@ class RequetesController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        return view('Requetes.index');
     }
 
     /**
