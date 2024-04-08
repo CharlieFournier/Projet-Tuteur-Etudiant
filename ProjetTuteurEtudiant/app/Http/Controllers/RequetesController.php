@@ -7,6 +7,7 @@ use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 use App\Models\Requete;
 use App\Models\Tuteur;
+use App\Models\Etudiant;
 
 class RequetesController extends Controller
 {
@@ -16,10 +17,10 @@ class RequetesController extends Controller
     public function index()
     {
         $tuteurs = Tuteur::all();
-
+        $etudiants = Etudiant::all();
         $requetes = Requete::all();
 
-        return view('Requetes.accueil', compact('requetes', 'tuteurs'));
+        return view('Requetes.accueil', compact('requetes', 'tuteurs', 'etudiants'));
     }
 
     /**

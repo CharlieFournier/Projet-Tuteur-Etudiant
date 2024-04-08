@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Models\Etudiant;
 
 class EtudiantsController extends Controller
 {
@@ -33,9 +34,10 @@ class EtudiantsController extends Controller
     /**
      * Display the specified resource.
      */
-    public function show(string $id)
+    public function show(string $etudiantMatricule)
     {
-        //
+        $etudiant = Etudiant::where('matricule', $etudiantMatricule)->firstOrFail();
+        return view('Etudiants.accueil', compact('etudiant'));
     }
 
     /**

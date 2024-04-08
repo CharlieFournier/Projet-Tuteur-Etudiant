@@ -75,7 +75,7 @@
                         <ul>
                             @foreach($tuteurs as $tuteur)
         
-                                <a href="{{route('Tuteurs.show', [$tuteur->nom])}}"><p>{{$tuteur->prenom}} {{$tuteur->nom}}</p></a>
+                                <a href="{{route('Tuteurs.show', [$tuteur->matricule])}}"><p>{{$tuteur->prenom}} {{$tuteur->nom}}</p></a>
                                 
                             @endforeach
                         </ul> 
@@ -89,7 +89,11 @@
                             <h1 id="text-event "> Étudiants </h1>
                         </div>
                             <ul>
-                       
+                            @foreach($etudiants as $etudiant)
+        
+                                <a href="{{route('Etudiants.show', [$etudiant->matricule])}}"><p>{{$etudiant->prenom}} {{$etudiant->nom}}</p></a>
+                                
+                            @endforeach
                             </ul>
                     </div>
                 </div>
