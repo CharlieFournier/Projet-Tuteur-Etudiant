@@ -21,8 +21,8 @@ class TuteursSeeder extends Seeder
                 'nom'=> 'Meow',
                 'email'=> 'meowmeow@hotmail.com',
                 'pwd'=> 'meow1234',
-                'grade_id'=> 1,
-                'matiere_id'=> 1,
+                #'grade_id'=> 1,
+                #'matiere_id'=> 1,
                 'nb_heures'=> 15
             ],
             [
@@ -32,8 +32,8 @@ class TuteursSeeder extends Seeder
                 'nom'=> 'Meow',
                 'email'=> 'meowmeow@hotmail.com',
                 'pwd'=> 'meow1234',
-                'grade_id'=> 2,
-                'matiere_id'=> 2,
+                #'grade_id'=> 2,
+                #'matiere_id'=> 2,
                 'nb_heures'=> 5
             ],
             [
@@ -43,8 +43,8 @@ class TuteursSeeder extends Seeder
                 'nom'=> 'Meow',
                 'email'=> 'meowmeow@hotmail.com',
                 'pwd'=> 'meow1234',
-                'grade_id'=> 3,
-                'matiere_id'=> 3,
+                #'grade_id'=> 3,
+                #'matiere_id'=> 3,
                 'nb_heures'=> 12
             ],
             [
@@ -54,8 +54,8 @@ class TuteursSeeder extends Seeder
                 'nom'=> 'Meow',
                 'email'=> 'meowmeow@hotmail.com',
                 'pwd'=> 'meow1234',
-                'grade_id'=> 1,
-                'matiere_id'=> 4,
+                #'grade_id'=> 1,
+                #'matiere_id'=> 4,
                 'nb_heures'=> 12
             ]
         ]);

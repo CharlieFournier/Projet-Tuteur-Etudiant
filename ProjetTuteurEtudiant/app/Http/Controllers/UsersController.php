@@ -4,7 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 
-class AdminController extends Controller
+class UsersController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -19,7 +19,15 @@ class AdminController extends Controller
      */
     public function create()
     {
-        return view("admin.inscription");
+        return view('users.create');
+    }
+
+    /**
+     * Show the form for creating a new resource.
+     */
+    public function login()
+    {
+        return view('users.login');
     }
 
     /**
@@ -44,11 +52,6 @@ class AdminController extends Controller
     public function edit(string $id)
     {
         //
-    }
-
-    public function login()
-    {
-        return view('admin.connexion');
     }
 
     /**
