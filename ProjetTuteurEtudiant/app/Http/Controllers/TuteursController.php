@@ -14,6 +14,11 @@ class TuteursController extends Controller
         return view('Tuteurs.accueil');
     }
 
+    public function remuneration()
+    {
+        return view('Tuteurs.remuneration');
+    }
+
     /**
      * Show the form for creating a new resource.
      */
