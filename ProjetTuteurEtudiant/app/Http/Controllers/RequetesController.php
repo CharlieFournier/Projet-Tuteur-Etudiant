@@ -6,6 +6,7 @@ use Illuminate\Support\Facades\Log;
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 use App\Models\Requete;
+use App\Models\Tuteur;
 
 class RequetesController extends Controller
 {
@@ -14,9 +15,11 @@ class RequetesController extends Controller
      */
     public function index()
     {
+        $tuteurs = Tuteur::all();
+
         $requetes = Requete::all();
 
-        return view('Requetes.accueil', compact('requetes'));
+        return view('Requetes.accueil', compact('requetes', 'tuteurs'));
     }
 
     /**

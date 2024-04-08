@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Models\Tuteur;
 
 class TuteursController extends Controller
 {
@@ -11,7 +12,8 @@ class TuteursController extends Controller
      */
     public function index()
     {
-        return view('Tuteurs.accueil');
+        $tuteurs = Tuteur::all();
+        return view('Tuteurs.accueil',compact('tuteurs'));
     }
 
     public function remuneration()
@@ -24,7 +26,7 @@ class TuteursController extends Controller
      */
     public function create()
     {
-        //
+        
     }
 
     /**
@@ -32,15 +34,24 @@ class TuteursController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        try {
+            $tuteurs = new Personne($request->all());
+            Log::debug($tuteurs);
+            $tuteurs->save();
+                }
+                
+            catch (\Throwable $e) {
+                Log::debug($e);
+            }
     }
 
     /**
      * Display the specified resource.
      */
-    public function show(string $id)
+    public function show($tuteurNom)
     {
-        //
+        $tuteur = Tuteur::where('nom', $tuteurNom)->firstOrFail();
+        return view('Tuteurs.accueil', compact('tuteur'));
     }
 
     /**

@@ -19,7 +19,7 @@
                     <input class="form-control" type="text" id="username" name="username">
                 </div>
                 <div class="p-3">
-                    <label class="form-label" for="addressCourriel">Address Courriel : </label>
+                    <label class="form-label" for="addressCourriel">Addresse Courriel : </label>
                     <input class="form-control" type="text" id="addressCourriel" name="addressCourriel">
                 </div>
                 <div class="p-3">
