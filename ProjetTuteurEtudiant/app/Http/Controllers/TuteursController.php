@@ -2,8 +2,10 @@
 
 namespace App\Http\Controllers;
 
+use Illuminate\Support\Facades\Log;
 use Illuminate\Http\Request;
 use App\Models\Tuteur;
+use App\Models\user;
 
 class TuteursController extends Controller
 {
@@ -12,7 +14,7 @@ class TuteursController extends Controller
      */
     public function index()
     {
-        $tuteurs = Tuteur::all();
+        $tuteurs = User::all()->where('role', '=', 'tuteur');
         return view('Tuteurs.accueil',compact('tuteurs'));
     }
 
@@ -35,7 +37,7 @@ class TuteursController extends Controller
     public function store(Request $request)
     {
         try {
-            $tuteurs = new Personne($request->all());
+            $tuteurs = new tuteur($request->all());
             Log::debug($tuteurs);
             $tuteurs->save();
                 }

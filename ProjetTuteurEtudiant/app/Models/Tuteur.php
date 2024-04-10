@@ -8,7 +8,7 @@ use Illuminate\Database\Eloquent\Model;
 class Tuteur extends Model
 {
     protected $fillable = ['matricule','prenom', 'nom', 'email', 'pwd', 'nb_heures'];
-    protected $table = 'tuteurs';
+    protected $table = 'users';
     use HasFactory;
 
 }

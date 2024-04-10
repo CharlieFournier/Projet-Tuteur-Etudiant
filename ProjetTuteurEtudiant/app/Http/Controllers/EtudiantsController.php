@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Models\Etudiant;
+use App\Models\user;
 
 class EtudiantsController extends Controller
 {
@@ -12,6 +13,7 @@ class EtudiantsController extends Controller
      */
     public function index()
     {
+        $etudiants = User::all()->where('role', 'like', 'etudiant');
         return view('Etudiants.accueil');
     }
 

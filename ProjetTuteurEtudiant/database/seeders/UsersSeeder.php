@@ -15,14 +15,77 @@ class UsersSeeder extends Seeder
     {
         DB::table('users')->insert([
             [
-            'id' => 1,
-            'user' => 'Meow',
-            'mdp' => 'Meow',
+                
+                'matricule' => 1234567,
+                'prenom' => 'Bananes',
+                'nom'=> 'Meow',
+                'email'=> 'meowmeow@hotmail.com',
+                'pwd'=> 'meow1234',
+                'nb_heures'=> 35,
+                'role' => 'etudiant',
+                'niveau' => '1er annee'
             ],
             [
-            'id' => 2,
-            'user' => 'Rose',
-            'mdp' => 'Rose',
+                
+                'matricule' => 8675439,
+                'prenom' => 'Framboise',
+                'nom'=> 'Meow',
+                'email'=> 'meowmeow@hotmail.com',
+                'pwd'=> 'meow1234',
+                'nb_heures'=> 20,
+                'role' => 'etudiant',
+                'niveau' => '1er annee'
+            ],
+            [
+                
+                'matricule' => 8693922,
+                'prenom' => 'Mangues',
+                'nom'=> 'Meow',
+                'email'=> 'meowmeow@hotmail.com',
+                'pwd'=> 'meow1234',
+                'nb_heures'=> 35,
+                'role' => 'etudiant',
+                'niveau' => '1er annee'
+            ],
+            [
+                'matricule' => 2052524,
+                'prenom' => 'Meow',
+                'nom'=> 'Meow',
+                'email'=> 'meowmeow@hotmail.com',
+                'pwd'=> 'meow1234',
+                'nb_heures'=> 15,
+                'role' => 'tuteur',
+                'niveau' => 'enseignant'
+            ],
+            [
+                'matricule' => 7894562,
+                'prenom' => 'Orange',
+                'nom'=> 'Meow',
+                'email'=> 'meowmeow@hotmail.com',
+                'pwd'=> 'meow1234',
+                'nb_heures'=> 5,
+                'role' => 'tuteur',
+                'niveau' => 'enseignant'
+            ],
+            [
+                'matricule' => 6543217,
+                'prenom' => 'Grenade',
+                'nom'=> 'Meow',
+                'email'=> 'meowmeow@hotmail.com',
+                'pwd'=> 'meow1234',
+                'nb_heures'=> 12,
+                'role' => 'tuteur',
+                'niveau' => 'enseignant'
+            ],
+            [
+                'matricule' => 6547227,
+                'prenom' => 'Pommes',
+                'nom'=> 'Meow',
+                'email'=> 'meowmeow@hotmail.com',
+                'pwd'=> 'meow1234',
+                'nb_heures'=> 12,
+                'role' => 'tuteur',
+                'niveau' => 'enseignant'
             ]
             ]);
     }
