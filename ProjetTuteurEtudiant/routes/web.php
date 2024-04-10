@@ -31,6 +31,9 @@ Route::get('/remunerationTuteur',
 Route::get('/accueilEtudiant', 
 [EtudiantsController::class, 'index'])->name('Etudiants.index');
 
+Route::get('/heuresEtudiant', 
+[EtudiantsController::class, 'heures'])->name('Etudiants.heures');
+
 //------- Admins -------//
 
 Route::get('/adminlogin', 
