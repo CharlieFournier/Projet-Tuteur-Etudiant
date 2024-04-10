@@ -3,6 +3,9 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Models\Tuteur;
+use App\Models\Etudiant;
+use App\Models\User;
 
 class UsersController extends Controller
 {
@@ -11,7 +14,10 @@ class UsersController extends Controller
      */
     public function index()
     {
-        //
+        $tuteurs = User::all()->where('role', 'like', 'tuteur');
+        $etudiants = User::all()->where('role', 'like', 'etudiant');
+
+        return view('' ,compact('tuteurs', 'etudiants'));
     }
 
     /**
@@ -19,7 +25,10 @@ class UsersController extends Controller
      */
     public function create()
     {
-        return view('users.create');
+        $tuteurs = User::all()->where('role', 'like', 'tuteur');
+        $etudiants = User::all()->where('role', 'like', 'etudiant');
+
+        return view('users.create', compact('tuteurs', 'etudiants'));
     }
 
     /**
@@ -27,7 +36,10 @@ class UsersController extends Controller
      */
     public function login()
     {
-        return view('users.login');
+        $tuteurs = User::all()->where('role', 'like', 'tuteur');
+        $etudiants = User::all()->where('role', 'like', 'etudiant');
+
+        return view('users.login', compact('tuteurs', 'etudiants'));
     }
 
     /**
@@ -51,7 +63,10 @@ class UsersController extends Controller
      */
     public function edit()
     {
-        return view('users.edit');
+        $tuteurs = User::all()->where('role', 'like', 'tuteur');
+        $etudiants = User::all()->where('role', 'like', 'etudiant');
+
+        return view('users.edit', compact('tuteurs', 'etudiants'));
     }
 
     /**
