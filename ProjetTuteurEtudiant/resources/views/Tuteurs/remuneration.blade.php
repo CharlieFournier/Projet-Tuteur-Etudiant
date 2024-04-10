@@ -13,7 +13,7 @@
         <div class="col-md-2 h-100">
         </div> 
         <div class="col-md-8 h-100">
-            <div class="row h-20">
+            <div class="row h-100">
                 <div class="col-md-6 text-start">
                     <h1> Bonjour |Tuteur| </h1>
                 </div>

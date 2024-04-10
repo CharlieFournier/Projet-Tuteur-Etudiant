@@ -14,16 +14,18 @@
         </div> 
         <div class="col-md-8 h-100">
             <div class="row h-100">
-                <div class="col-md-3">
+                <div class="col-md-6 text-start">
                     <h1> Bonjour |Etudiant| </h1>
                 </div>
-                <div class="col-md-3">
-                </div>
-                <div class="col-md-3"> 
-                </div>
-                <div class="col-md-3">
+                <div class="col-md-6 text-end">
                     <h5> Heure disponible: 00h </h5>
                 </div>
+
+                <div class="pt-5">
+                    <h1><u>Liste des rendez-vous</u></h1>
+                    <h3> |Tuteur + Date + nbrHeure + status (Complété/à venir/annulé)|</h3>
+                </div>
+
             </div>
         </div>
         <div class="col-md-2 h-100">
