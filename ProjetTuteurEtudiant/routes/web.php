@@ -13,8 +13,16 @@ use App\Models\Requete;
 
 //------- Demandes d'aides -------//
 
-Route::get('/accueil', 
-[RequetesController::class, 'index'])->name('Requetes.index');
+if ("etudiant" == "etudiant") {
+    Route::get('/accueil', 
+    [RequetesController::class, 'index'])->name('Requetes.index');
+}
+
+else if ($user.role == "tuteur") {
+    Route::get('/accueil', 
+    [RequetesController::class, 'show'])->name('Requetes.show');
+}
+
 
 Route::get('/creation', 
 [RequetesController::class, 'create'])->name('Requetes.create');
