@@ -42,3 +42,6 @@ Route::get('/connexion',
 
 Route::get('/inscription', 
 [UsersController::class, 'create'])->name('users.create');
+
+Route::get('/modifier',
+[UsersController::class, 'edit'])->name('users.edit');

@@ -13,6 +13,7 @@
         <div class="row justify-content-center align-items-center h-100 ">
             <div class="col-6 blanc" style="border-radius: 20px;">
                 <div class="p-3 text-center"><h1>Inscription</h1><hr/></div>
+
                 <form method="post" action="{{}}">
                     @csrf
                     <div class="row p-3">
@@ -45,16 +46,27 @@
                     </div>
                     <div class="row p-3">
                         <div class="col-4">
-                            <label class="form-label" for="grade">Grade : </label>
-                            <input class="form-control" type="text" id="grade" name="grade">
+                        <label class="form-label" for="role">Rôle : </label>
+                            <br>
+                            <input class="" type="radio" id="role" name="role">
+                            <label class="form-label" for="role">Tuteur</label>
+                            <br>
+                            <input class="" type="radio" id="role" name="role">
+                            <label class="form-label" for="role">Etudiant</label>
                         </div>
                         <div class="col-4">
-                            <label class="form-label" for="matiere">Matière : </label>
-                            <input class="form-control" type="text" id="matiere" name="matiere">
+                        <label class="form-label" for="niveau">Niveau : </label>
+                            <select name="niveau" id="niveau" type="text" class="form-control" placeholder="Veuillez choisir...">
+                                <option value="">1iere annee</option>
+                                <option value="">2ieme annee</option>
+                                <option value="">3ieme annee</option>
+                                <option value="">Enseignant</option>
+                            </select>
                         </div>
+                        
                         <div class="col-4">
                             <label class="form-label" for="nb_heures">Nombre d'heure : </label>
-                            <input class="form-control" type="text" id="nb_heures" name="nb_heures">
+                            <input class="form-control" type="number" id="nb_heures" name="nb_heures" min=0 max=15>
                         </div>
                     </div>
                     <div class="p-3 text-center">

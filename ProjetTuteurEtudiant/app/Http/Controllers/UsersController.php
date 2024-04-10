@@ -19,7 +19,7 @@ class UsersController extends Controller
      */
     public function create()
     {
-        return view('users.createTuteur');
+        return view('users.create');
     }
 
     /**
@@ -49,9 +49,9 @@ class UsersController extends Controller
     /**
      * Show the form for editing the specified resource.
      */
-    public function edit(string $id)
+    public function edit()
     {
-        //
+        return view('users.edit');
     }
 
     /**

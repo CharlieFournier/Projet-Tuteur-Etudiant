@@ -32,7 +32,7 @@
                     </li>
 
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Tuteurs</a>
+                        <a class="nav-link" href="{{route('users.edit')}}">Profile</a>
                     </li>
 
                 </ul>
