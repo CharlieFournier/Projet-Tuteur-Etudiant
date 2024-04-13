@@ -14,7 +14,7 @@
             <div class="col-6 blanc" style="border-radius: 20px;">
                 <div class="p-3 text-center"><h1>Inscription</h1><hr/></div>
 
-                <form method="post" action="{{}}">
+                <form method="post" action="{{route(Users.store)}}">
                     @csrf
                     <div class="row p-3">
                         <div class="col-4">
@@ -36,8 +36,8 @@
                             <input class="form-control" type="text" id="addressCourriel" name="addressCourriel">
                         </div>
                         <div class="">
-                            <label class="form-label" for="motdepasse">Mot de Passe : </label>
-                            <input class="form-control" type="password" id="motdepasse" name="motdepasse">
+                            <label class="form-label" for="password">Password : </label>
+                            <input class="form-control" type="password" id="password" name="password">
                         </div>
                         <div class="">
                             <label class="form-label" for="confirme">Confirmation du Mot de Passe : </label>
@@ -70,7 +70,9 @@
                         </div>
                     </div>
                     <div class="p-3 text-center">
-                        <button class="btn" style="background-color: rgba(255,192,203,0.5); border-color: black;" type="button">S'inscrire</button>
+                        <button class="btn" style="background-color: rgba(255,192,203,0.5); border-color: black;" type="submit">
+                            S'inscrire
+                        </button>
                     </div>
                 </form>
             </div>

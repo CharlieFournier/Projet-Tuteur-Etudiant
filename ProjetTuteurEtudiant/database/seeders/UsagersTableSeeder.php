@@ -4,23 +4,25 @@ namespace Database\Seeders;
 
 use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
+use Illuminate\Support\Facades\Hash;
+use Illuminate\Support\Str;
 use DB;
 
-class UsersSeeder extends Seeder
+class UsagersTableSeeder extends Seeder
 {
     /**
      * Run the database seeds.
      */
     public function run(): void
     {
-        DB::table('users')->insert([
+        DB::table('usagers')->insert([
             [
                 
                 'matricule' => 1234567,
                 'prenom' => 'Bananes',
                 'nom'=> 'Meow',
                 'email'=> 'meowmeow@hotmail.com',
-                'pwd'=> 'meow1234',
+                'password'=> 'meow1234',
                 'nb_heures'=> 35,
                 'role' => 'etudiant',
                 'niveau' => '1er annee'
@@ -31,7 +33,7 @@ class UsersSeeder extends Seeder
                 'prenom' => 'Framboise',
                 'nom'=> 'Meow',
                 'email'=> 'meowmeow@hotmail.com',
-                'pwd'=> 'meow1234',
+                'password'=> 'meow1234',
                 'nb_heures'=> 20,
                 'role' => 'etudiant',
                 'niveau' => '1er annee'
@@ -42,7 +44,7 @@ class UsersSeeder extends Seeder
                 'prenom' => 'Mangues',
                 'nom'=> 'Meow',
                 'email'=> 'meowmeow@hotmail.com',
-                'pwd'=> 'meow1234',
+                'password'=> 'meow1234',
                 'nb_heures'=> 35,
                 'role' => 'etudiant',
                 'niveau' => '1er annee'
@@ -52,7 +54,7 @@ class UsersSeeder extends Seeder
                 'prenom' => 'Meow',
                 'nom'=> 'Meow',
                 'email'=> 'meowmeow@hotmail.com',
-                'pwd'=> 'meow1234',
+                'password'=> 'meow1234',
                 'nb_heures'=> 15,
                 'role' => 'tuteur',
                 'niveau' => 'enseignant'
@@ -62,7 +64,7 @@ class UsersSeeder extends Seeder
                 'prenom' => 'Orange',
                 'nom'=> 'Meow',
                 'email'=> 'meowmeow@hotmail.com',
-                'pwd'=> 'meow1234',
+                'password'=> 'meow1234',
                 'nb_heures'=> 5,
                 'role' => 'tuteur',
                 'niveau' => 'enseignant'
@@ -72,7 +74,7 @@ class UsersSeeder extends Seeder
                 'prenom' => 'Grenade',
                 'nom'=> 'Meow',
                 'email'=> 'meowmeow@hotmail.com',
-                'pwd'=> 'meow1234',
+                'password'=> 'meow1234',
                 'nb_heures'=> 12,
                 'role' => 'tuteur',
                 'niveau' => 'enseignant'
@@ -82,7 +84,7 @@ class UsersSeeder extends Seeder
                 'prenom' => 'Pommes',
                 'nom'=> 'Meow',
                 'email'=> 'meowmeow@hotmail.com',
-                'pwd'=> 'meow1234',
+                'password'=> 'meow1234',
                 'nb_heures'=> 12,
                 'role' => 'tuteur',
                 'niveau' => 'enseignant'

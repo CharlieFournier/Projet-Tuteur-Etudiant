@@ -17,7 +17,7 @@
     <nav class="navbar navbar-expand-lg navbar-light cegep1 text-center">
         <div class="container-fluid">
 
-            <a class="navbar-brand" href="{{route('users.login')}}">Projet Tutorat</a>
+            <a class="navbar-brand" href="{{route('Users.login')}}">Projet Tutorat</a>
 
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -32,7 +32,7 @@
                     </li>
 
                     <li class="nav-item">
-                        <a class="nav-link" href="{{route('users.edit')}}">Profile</a>
+                        <a class="nav-link" href="{{route('Users.edit')}}">Profile</a>
                     </li>
 
                 </ul>
@@ -49,40 +49,6 @@
         <div class="row text-center h-100">    
             <div class="col-10">
             @yield('contenu')
-            </div>
-            <div class="col-2">
-                <div class="row h-50">
-                    <div class="col-12 text-start card card-conteneur text-center p-0">
-
-                        <div class="col-12 card card-event-design text-center">
-                            <h1 id="text-event"> Tuteurs </h1>
-                        </div>
-                        
-                        <ul>
-                            @foreach($tuteurs as $tuteur)
-        
-                                <a href="{{route('Tuteurs.show', [$tuteur->matricule])}}"><p>{{$tuteur->prenom}} {{$tuteur->nom}}</p></a>
-                                
-                            @endforeach
-                        </ul> 
-
-                    </div>
-                </div>
-                <div class="row h-50">
-                    <div class="col-12 text-start card card-conteneur text-center p-0">
-
-                        <div class="col-12 card card-event-design text-center">
-                            <h1 id="text-event "> Étudiants </h1>
-                        </div>
-                            <ul>
-                            @foreach($etudiants as $etudiant)
-        
-                                <a href="{{route('Etudiants.show', [$etudiant->matricule])}}"><p>{{$etudiant->prenom}} {{$etudiant->nom}}</p></a>
-                                
-                            @endforeach
-                            </ul>
-                    </div>
-                </div>
             </div>
         </div>
     </div>

@@ -13,12 +13,8 @@ use App\Models\Requete;
 
 //------- Demandes d'aides -------//
 
-Route::get('/accueil', 
+Route::get('/', 
 [RequetesController::class, 'index'])->name('Requetes.index');
-
-Route::get('/creation', 
-[RequetesController::class, 'create'])->name('Requetes.create');
-
 
 
 //------- Tuteurs -------//
@@ -29,6 +25,7 @@ Route::get('/Tuteur/{tuteur}',
 Route::get('/remunerationTuteur', 
 [TuteursController::class, 'remuneration'])->name('Tuteurs.remuneration');
 
+
 //------- Etudiants -------//
 
 Route::get('/accueilEtudiant/{etudiant}', 
@@ -37,11 +34,18 @@ Route::get('/accueilEtudiant/{etudiant}',
 
 //----- Users ------//
 
-Route::get('/connexion', 
-[UsersController::class, 'login'])->name('users.login');
+Route::get('/login', 
+[UsersController::class, 'index'])->name('showLogin');
+
+Route::post('/login', 
+[UsersController::class, 'login'])->name('login');
+
+Route::post('/logout', 
+[UsersController::class, 'logout'])->name('logout')->middleware('auth');
 
 Route::get('/inscription', 
-[UsersController::class, 'create'])->name('users.create');
+[UsersController::class, 'create'])->name('Users.create')->middleware('auth');
 
-Route::get('/modifier',
-[UsersController::class, 'edit'])->name('users.edit');
+Route::post('/inscription', 
+[UsersController::class, 'store'])->name('Users.store')->middleware('auth');
+
