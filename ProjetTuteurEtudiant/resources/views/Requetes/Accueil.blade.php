@@ -6,399 +6,154 @@
     <div class="container-fluid h-100">
         <div class="row text-center h-100">
 
-            <div class="col-10 ">
-                <div class="row justify-content-center align-items-center h-4">
+            <div class="col-10 h-100">
+                <div class="row h-100">
+                    <div class="col-2 h-">
 
-                    <div class="col-1 h-100 p-0">
-                        <div class="card h-100 justify-content-center">heure</div>   
-                    
-                    </div> 
+                        <div class="row justify-content-center align-items-center h-4"></div>
 
-                    <div class="col-2 h-100 p-0">
-                        <div class="card h-100 justify-content-center">Lundi</div>   
-                    
-                    </div>    
-                    <div class="col-2 h-100 p-0">
-                        <div class="card h-100 justify-content-center">Mardi</div> 
 
-                    </div>    
-                    <div class="col-2 h-100 p-0">
-                        <div class="card h-100 justify-content-center">Mercredi</div> 
+                        <div class="row justify-content-end align-items-end h-8">
+                            <div class="col-6 h-100 p-0">
 
-                    </div>    
-                    <div class="col-2 h-100 p-0">
-                        <div class="card h-100 justify-content-center">Jeudi</div> 
+                                <div class="card h-100 justify-content-right"></div>   
+                                
+                            </div> 
+                        </div>
+                                                <div class="row justify-content-end align-items-end h-8">
+                            <div class="col-6 h-100 p-0">
 
-                    </div>    
-                    <div class="col-2 h-100 p-0">
-                        <div class="card h-100 justify-content-center">Vendredi</div> 
+                                <div class="card h-100 justify-content-right"></div>   
+                                
+                            </div> 
+                        </div>
+                        <div class="row justify-content-end align-items-end h-8">
+                            <div class="col-6 h-100 p-0">
 
-                    </div>    
+                                <div class="card h-100 justify-content-right"></div>   
+                                
+                            </div> 
+                        </div>
+                        <div class="row justify-content-end align-items-end h-8">
+                            <div class="col-6 h-100 p-0">
 
-                </div>
+                                <div class="card h-100 justify-content-right"></div>   
+                                
+                            </div> 
+                        </div>
+                        <div class="row justify-content-end align-items-end h-8">
+                            <div class="col-6 h-100 p-0">
 
-                <div class="row justify-content-center align-items-center h-8">
+                                <div class="card h-100 justify-content-right"></div>   
+                                
+                            </div> 
+                        </div>
+                        <div class="row justify-content-end align-items-end h-8">
+                            <div class="col-6 h-100 p-0">
 
-                    <div class="col-1 h-100 p-0">
-                        <div class="card h-100 justify-content-center"></div>   
-                    
-                    </div> 
+                                <div class="card h-100 justify-content-right"></div>   
+                                
+                            </div> 
+                        </div>
+                        <div class="row justify-content-end align-items-end h-8">
+                            <div class="col-6 h-100 p-0">
 
-                    <div class="col-2 h-100 p-0">
-                        <div class="card h-100 justify-content-center"></div>   
-                    
-                    </div>    
-                    <div class="col-2 h-100 p-0">
-                        <div class="card h-100 justify-content-center"></div> 
+                                <div class="card h-100 justify-content-right"></div>   
+                                
+                            </div> 
+                        </div>
+                        <div class="row justify-content-end align-items-end h-8">
+                            <div class="col-6 h-100 p-0">
 
-                    </div>    
-                    <div class="col-2 h-100 p-0">
-                        <div class="card h-100 justify-content-center"></div> 
+                                <div class="card h-100 justify-content-right"></div>   
+                                
+                            </div> 
+                        </div>
+                        <div class="row justify-content-end align-items-end h-8">
+                            <div class="col-6 h-100 p-0">
 
-                    </div>    
-                    <div class="col-2 h-100 p-0">
-                        <div class="card h-100 justify-content-center"></div> 
+                                <div class="card h-100 justify-content-right"></div>   
+                                
+                            </div> 
+                        </div>
+                        <div class="row justify-content-end align-items-end h-8">
+                            <div class="col-6 h-100 p-0">
 
-                    </div>    
-                    <div class="col-2 h-100 p-0">
-                        <div class="card h-100 justify-content-center"></div> 
+                                <div class="card h-100 justify-content-right"></div>   
+                                
+                            </div> 
+                        </div>
+                        <div class="row justify-content-end align-items-end h-8">
+                            <div class="col-6 h-100 p-0">
 
-                    </div>    
+                                <div class="card h-100 justify-content-right"></div>   
+                                
+                            </div> 
+                        </div>
+                        <div class="row justify-content-end align-items-end h-8">
+                            <div class="col-6 h-100 p-0">
 
-                </div>
+                                <div class="card h-100 justify-content-right"></div>   
+                                
+                            </div> 
+                        </div>
+
+                    </div>
                 
-                <div class="row justify-content-center align-items-center h-8">
+                    <div class="col-10">
+                        <div class="row align-items-center h-4">
 
-                    <div class="col-1 h-100 p-0">
-                        <div class="card h-100 justify-content-center"></div>   
+                            <div class="col-2 h-100 p-0">
+                                <div class="card h-100 justify-content-center">Lundi</div>   
+                            
+                            </div>    
+                            <div class="col-2 h-100 p-0">
+                                <div class="card h-100 justify-content-center">Mardi</div> 
 
-                    </div> 
+                            </div>    
+                            <div class="col-2 h-100 p-0">
+                                <div class="card h-100 justify-content-center">Mercredi</div> 
 
-                    <div class="col-2 h-100 p-0">
-                        <div class="card h-100 justify-content-center"></div>   
+                            </div>    
+                            <div class="col-2 h-100 p-0">
+                                <div class="card h-100 justify-content-center">Jeudi</div> 
 
-                    </div>    
-                    <div class="col-2 h-100 p-0">
-                        <div class="card h-100 justify-content-center"></div> 
+                            </div>    
+                            <div class="col-2 h-100 p-0">
+                                <div class="card h-100 justify-content-center">Vendredi</div> 
 
-                    </div>    
-                    <div class="col-2 h-100 p-0">
-                        <div class="card h-100 justify-content-center"></div> 
+                            </div>    
 
-                    </div>    
-                    <div class="col-2 h-100 p-0">
-                        <div class="card h-100 justify-content-center"></div> 
+                        </div>
 
-                    </div>    
-                    <div class="col-2 h-100 p-0">
-                        <div class="card h-100 justify-content-center"></div> 
+                        <div class="row align-items-center h-8">
 
-                    </div>    
+                            <div class="col-2 h-100 p-0">
+                                <div class="card h-100 justify-content-center"></div>   
+                            
+                            </div>    
+                            <div class="col-2 h-100 p-0">
+                                <div class="card h-100 justify-content-center"></div> 
 
-                </div>
+                            </div>    
+                            <div class="col-2 h-100 p-0">
+                                <div class="card h-100 justify-content-center"></div> 
+
+                            </div>    
+                            <div class="col-2 h-100 p-0">
+                                <div class="card h-100 justify-content-center"></div> 
+
+                            </div>    
+                            <div class="col-2 h-100 p-0">
+                                <div class="card h-100 justify-content-center"></div> 
+
+                            </div>    
+
+                        </div>
+
+                    </div>
                 
-                <div class="row justify-content-center align-items-center h-8">
-
-                    <div class="col-1 h-100 p-0">
-                        <div class="card h-100 justify-content-center"></div>   
-
-                    </div> 
-
-                    <div class="col-2 h-100 p-0">
-                        <div class="card h-100 justify-content-center"></div>   
-
-                    </div>    
-                    <div class="col-2 h-100 p-0">
-                        <div class="card h-100 justify-content-center"></div> 
-
-                    </div>    
-                    <div class="col-2 h-100 p-0">
-                        <div class="card h-100 justify-content-center"></div> 
-
-                    </div>    
-                    <div class="col-2 h-100 p-0">
-                        <div class="card h-100 justify-content-center"></div> 
-
-                    </div>    
-                    <div class="col-2 h-100 p-0">
-                        <div class="card h-100 justify-content-center"></div> 
-
-                    </div>    
-
-                </div> 
-
-                <div class="row justify-content-center align-items-center h-8">
-
-                    <div class="col-1 h-100 p-0">
-                        <div class="card h-100 justify-content-center"></div>   
-
-                    </div> 
-
-                    <div class="col-2 h-100 p-0">
-                        <div class="card h-100 justify-content-center"></div>   
-
-                    </div>    
-                    <div class="col-2 h-100 p-0">
-                        <div class="card h-100 justify-content-center"></div> 
-
-                    </div>    
-                    <div class="col-2 h-100 p-0">
-                        <div class="card h-100 justify-content-center"></div> 
-
-                    </div>    
-                    <div class="col-2 h-100 p-0">
-                        <div class="card h-100 justify-content-center"></div> 
-
-                    </div>    
-                    <div class="col-2 h-100 p-0">
-                        <div class="card h-100 justify-content-center"></div> 
-
-                    </div>    
-
                 </div>
-
-                <div class="row justify-content-center align-items-center h-8">
-
-                    <div class="col-1 h-100 p-0">
-                        <div class="card h-100 justify-content-center"></div>   
-
-                    </div> 
-
-                    <div class="col-2 h-100 p-0">
-                        <div class="card-header h-100 justify-content-center"></div>   
-
-                    </div>    
-                    <div class="col-2 h-100 p-0">
-                        <div class="card-header h-100 justify-content-center"></div> 
-
-                    </div>    
-                    <div class="col-2 h-100 p-0">
-                        <div class="card-header h-100 justify-content-center"></div> 
-
-                    </div>    
-                    <div class="col-2 h-100 p-0">
-                        <div class="card-header h-100 justify-content-center"></div> 
-
-                    </div>    
-                    <div class="col-2 h-100 p-0">
-                        <div class="card-header h-100 justify-content-center"></div> 
-
-                    </div>    
-
-                </div>
-
-                <div class="row justify-content-center align-items-center h-8">
-
-                    <div class="col-1 h-100 p-0">
-                        <div class="card h-100 justify-content-center"></div>   
-
-                    </div> 
-
-                    <div class="col-2 h-100 p-0">
-                        <div class="card h-100 justify-content-center"></div>   
-
-                    </div>    
-                    <div class="col-2 h-100 p-0">
-                        <div class="card h-100 justify-content-center"></div> 
-
-                    </div>    
-                    <div class="col-2 h-100 p-0">
-                        <div class="card h-100 justify-content-center"></div> 
-
-                    </div>    
-                    <div class="col-2 h-100 p-0">
-                        <div class="card h-100 justify-content-center"></div> 
-
-                    </div>    
-                    <div class="col-2 h-100 p-0">
-                        <div class="card h-100 justify-content-center"></div> 
-
-                    </div>    
-
-                </div>
-
-                <div class="row justify-content-center align-items-center h-8">
-
-                    <div class="col-1 h-100 p-0">
-                        <div class="card h-100 justify-content-center"></div>   
-
-                    </div> 
-
-                    <div class="col-2 h-100 p-0">
-                        <div class="card h-100 justify-content-center"></div>   
-
-                    </div>    
-                    <div class="col-2 h-100 p-0">
-                        <div class="card h-100 justify-content-center"></div> 
-
-                    </div>    
-                    <div class="col-2 h-100 p-0">
-                        <div class="card h-100 justify-content-center"></div> 
-
-                    </div>    
-                    <div class="col-2 h-100 p-0">
-                        <div class="card h-100 justify-content-center"></div> 
-
-                    </div>    
-                    <div class="col-2 h-100 p-0">
-                        <div class="card h-100 justify-content-center"></div> 
-
-                    </div>    
-
-                </div> 
-
-                <div class="row justify-content-center align-items-center h-8">
-
-                    <div class="col-1 h-100 p-0">
-                        <div class="card h-100 justify-content-center"></div>   
-
-                    </div> 
-
-                    <div class="col-2 h-100 p-0">
-                        <div class="card h-100 justify-content-center"></div>   
-
-                    </div>    
-                    <div class="col-2 h-100 p-0">
-                        <div class="card h-100 justify-content-center"></div> 
-
-                    </div>    
-                    <div class="col-2 h-100 p-0">
-                        <div class="card h-100 justify-content-center"></div> 
-
-                    </div>    
-                    <div class="col-2 h-100 p-0">
-                        <div class="card h-100 justify-content-center"></div> 
-
-                    </div>    
-                    <div class="col-2 h-100 p-0">
-                        <div class="card h-100 justify-content-center"></div> 
-
-                    </div>    
-
-                </div>
-
-                <div class="row justify-content-center align-items-center h-4">
-
-                    <div class="col-1 h-100 p-0 ">
-                        <div class="card h-100 justify-content-center palefonce"></div>   
-
-                    </div> 
-
-                    <div class="col-2 h-100 p-0">
-                        <div class="card-header h-100 justify-content-center palefonce"></div>   
-
-                    </div>    
-                    <div class="col-2 h-100 p-0">
-                        <div class="card-header h-100 justify-content-center palefonce"></div> 
-
-                    </div>    
-                    <div class="col-2 h-100 p-0">
-                        <div class="card-header h-100 justify-content-center palefonce"></div> 
-
-                    </div>    
-                    <div class="col-2 h-100 p-0">
-                        <div class="card-header h-100 justify-content-center palefonce"></div> 
-
-                    </div>    
-                    <div class="col-2 h-100 p-0">
-                        <div class="card-header h-100 justify-content-center"></div> 
-
-                    </div>    
-
-                </div>
-
-                <div class="row justify-content-center align-items-center h-8">
-
-                    <div class="col-1 h-100 p-0">
-                        <div class="card h-100 justify-content-center"></div>   
-
-                    </div> 
-
-                    <div class="col-2 h-100 p-0">
-                        <div class="card h-100 justify-content-center"></div>   
-
-                    </div>    
-                    <div class="col-2 h-100 p-0">
-                        <div class="card h-100 justify-content-center"></div> 
-
-                    </div>    
-                    <div class="col-2 h-100 p-0">
-                        <div class="card h-100 justify-content-center"></div> 
-
-                    </div>    
-                    <div class="col-2 h-100 p-0">
-                        <div class="card h-100 justify-content-center"></div> 
-
-                    </div>    
-                    <div class="col-2 h-100 p-0">
-                        <div class="card h-100 justify-content-center"></div> 
-
-                    </div>    
-
-                </div>
-
-                <div class="row justify-content-center align-items-center h-8">
-
-                    <div class="col-1 h-100 p-0">
-                        <div class="card h-100 justify-content-center"></div>   
-
-                    </div> 
-
-                    <div class="col-2 h-100 p-0">
-                        <div class="card h-100 justify-content-center"></div>   
-
-                    </div>    
-                    <div class="col-2 h-100 p-0">
-                        <div class="card h-100 justify-content-center"></div> 
-
-                    </div>    
-                    <div class="col-2 h-100 p-0">
-                        <div class="card h-100 justify-content-center"></div> 
-
-                    </div>    
-                    <div class="col-2 h-100 p-0">
-                        <div class="card h-100 justify-content-center"></div> 
-
-                    </div>    
-                    <div class="col-2 h-100 p-0">
-                        <div class="card h-100 justify-content-center"></div> 
-
-                    </div>    
-
-                </div> 
-
-                <div class="row justify-content-center align-items-center h-8">
-
-                    <div class="col-1 h-100 p-0">
-                        <div class="card h-100 justify-content-center"></div>   
-
-                    </div> 
-
-                    <div class="col-2 h-100 p-0">
-                        <div class="card h-100 justify-content-center"></div>   
-
-                    </div>    
-                    <div class="col-2 h-100 p-0">
-                        <div class="card h-100 justify-content-center"></div> 
-
-                    </div>    
-                    <div class="col-2 h-100 p-0">
-                        <div class="card h-100 justify-content-center"></div> 
-
-                    </div>    
-                    <div class="col-2 h-100 p-0">
-                        <div class="card h-100 justify-content-center"></div> 
-
-                    </div>    
-                    <div class="col-2 h-100 p-0">
-                        <div class="card h-100 justify-content-center"></div> 
-
-                    </div>    
-
-                </div>
-                
-                
-
             </div>
 
             <div class="col-2">
