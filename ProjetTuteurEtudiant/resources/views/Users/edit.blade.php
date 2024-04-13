@@ -10,7 +10,7 @@
 </head>
 <body>
 @if(isset($user))
-<form method="post" action="{{route('Users.update', [$user])}}">
+<form method="post" action="{{route('usagers.update', [$usager])}}">
     @csrf 
     @method('PATCH')
     <div class="container-fluid text-center">
@@ -26,17 +26,17 @@
             <div class="col-xl-2">
                 <br>
                 <label class="form-label" for="matricule">Matricule</label>
-                <input type="text" class="form-control" id="matricule" placeholder="Yousouf8" name="matricule" value="{{old('matricule', $user->matricule)}}">
+                <input type="text" class="form-control" id="matricule" placeholder="Yousouf8" name="matricule" value="{{old('matricule', $usager->matricule)}}">
             </div>
             <div class="col-xl-3">
                 <br>
                 <label class="form-label" for="prenom">Prénom du client</label>
-                <input type="text" class="form-control" id="prenom" placeholder="Prénom du client" name="prenom" value="{{old('prenom', $user->prenom)}}">
+                <input type="text" class="form-control" id="prenom" placeholder="Prénom du client" name="prenom" value="{{old('prenom', $usager->prenom)}}">
             </div>
             <div class="col-xl-3">
                 <br>
                 <label class="form-label" for="nom">Nom du client</label>
-                <input type="text" class="form-control" id="nom" placeholder="Nom de la personne" name="nom" value="{{old('nom', $user->nom)}}">
+                <input type="text" class="form-control" id="nom" placeholder="Nom de la personne" name="nom" value="{{old('nom', $usager->nom)}}">
             </div>
             <div class="col-xl-2"></div>
         </div>
@@ -45,7 +45,7 @@
             <div class="col-xl-4">
                 <br>
                 <label class="form-label" for="email">Email de l'utilisateur</label>
-                <input type="email" class="form-control" placeholder="patate@hotmail.com" id="email" name="email" value="{{old('email', $user->email)}}">
+                <input type="email" class="form-control" placeholder="patate@hotmail.com" id="email" name="email" value="{{old('email', $usager->email)}}">
             </div>
             <div class="col-xl-2"></div>
         </div>
@@ -54,7 +54,7 @@
             <div class="col-xl-6">
                 <br>
                 <label class="form-label" for="pwd">le mot de passe</label>
-                <input type="text" class="form-control" id="pwd" placeholder="inscrire votre password" name="pwd" value="{{old('pwd', $user->pwd)}}">
+                <input type="text" class="form-control" id="pwd" placeholder="inscrire votre password" name="pwd" value="{{old('password', $usager->password)}}">
             </div>
             <div class="col-xl-3"></div>
         </div>
@@ -67,7 +67,7 @@
             </div>
             <div class="col-xl-2">
                 <br>
-                <form method="POST" action="{{route('Users.destroy', [$user->id])}}">
+                <form method="POST" action="{{route('usagers.destroy', [$usager->id])}}">
                     @csrf
                     @method('DELETE')
                     <button type="submit" class="btn btn-danger">Supprimer</button>

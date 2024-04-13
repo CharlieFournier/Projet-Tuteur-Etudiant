@@ -17,7 +17,7 @@
     <nav class="navbar navbar-expand-lg navbar-light cegep1 text-center">
         <div class="container-fluid">
 
-            <a class="navbar-brand" href="{{route('Users.login')}}">Projet Tutorat</a>
+            <a class="navbar-brand" href="{{route('login')}}">Projet Tutorat</a>
 
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -32,7 +32,7 @@
                     </li>
 
                     <li class="nav-item">
-                        <a class="nav-link" href="{{route('Users.edit')}}">Profile</a>
+                        <a class="nav-link" href="{{}}">Profile</a> <!-- Modifier -->
                     </li>
 
                 </ul>

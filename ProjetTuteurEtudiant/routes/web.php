@@ -7,6 +7,8 @@ use App\Http\Controllers\AdminController;
 use App\Http\Controllers\EtudiantsController;
 use App\Http\Controllers\RequetesController;
 use App\Http\Controllers\TuteursController;
+use App\Http\Controllers\UsersController;
+
 use Illuminate\Support\Facades\Route;
 use Illuminate\Http\Request;
 use App\Models\Requete;
@@ -44,8 +46,8 @@ Route::post('/logout',
 [UsersController::class, 'logout'])->name('logout')->middleware('auth');
 
 Route::get('/inscription', 
-[UsersController::class, 'create'])->name('Users.create')->middleware('auth');
+[UsersController::class, 'create'])->name('usagers.create');
 
 Route::post('/inscription', 
-[UsersController::class, 'store'])->name('Users.store')->middleware('auth');
+[UsersController::class, 'store'])->name('usagers.store')->middleware('auth');
 

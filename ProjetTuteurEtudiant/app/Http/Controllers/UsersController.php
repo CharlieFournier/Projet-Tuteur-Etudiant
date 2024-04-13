@@ -30,7 +30,7 @@ class UsersController extends Controller
         return view('Users.login', compact('fillable', 'tuteurs', 'etudiants'));
     }
 
-    public function userindex()
+    public function usagerindex()
     {
         $fillable = Usager::all();
         $usagers = Usager::all();
@@ -43,7 +43,7 @@ class UsersController extends Controller
     public function login(Request $request)
     {
         $reussi = Auth::attempt(['matricule' => $request->matricule, 'password' => $request->password]);
-        Log::debug('réussi: '.$reussi);
+        Log::debug(''.$reussi);
 
         if($reussi){
             Log::debug("NOOOOOOOOOOOOOOOOOOO");
@@ -82,9 +82,9 @@ class UsersController extends Controller
         }
         catch(\Throwable $e) {
             Log::debug($e);
-            return redirect()->route('Users.index')->withErrors(['ajout n\'a pas fonctionné']);
+            return redirect()->route('Requete.index')->withErrors(['ajout n\'a pas fonctionné']);
         }
-        return redirect()->route('Users.index');
+        return redirect()->route('Requete.index');
     }
 
     /**
@@ -142,7 +142,7 @@ class UsersController extends Controller
             Log::debug($e);
             return redirect()->route('Users.index')->withErrors(['la modification n\'a pas fonctionné']);
         }
-        return redirect()->route('Users.index');
+        return redirect()->route('usagers.index');
     }
 
     /**
@@ -152,17 +152,17 @@ class UsersController extends Controller
     {
         try
         {
-            $user = Usager::findOrFail($id);
+            $usager = Usager::findOrFail($id);
 
-            $user->delete();
-            return redirect()->route('Users.index')->with('message', "Suppression de " . $usager->nom . " réussi!");
+            $usager->delete();
+            return redirect()->route('usagers.index')->with('message', "Suppression de " . $usager->nom . " réussi!");
         }
         catch(\Throwable $e)
         {
             Log::debug($e);
-            return redirect()->route('Users.index')->withErrors(['la suppression n\'a pas fonctionné']); 
+            return redirect()->route('usagers.index')->withErrors(['la suppression n\'a pas fonctionné']); 
         }
-            return redirect()->route('Users.index');
+            return redirect()->route('usagers.index');
     }
 
 }

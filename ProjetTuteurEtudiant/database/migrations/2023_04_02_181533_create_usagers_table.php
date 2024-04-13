@@ -20,9 +20,7 @@ return new class extends Migration
             $table->double('nb_heures');
             $table->string('role', '255');
             $table->string('niveau', '255');
-
-            //$table->foreignId('grade_id');
-            //$table->foreignId('matiere_id');
+            $table->rememberToken();
             $table->timestamps();
         });
     }

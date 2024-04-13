@@ -22,7 +22,7 @@ class UsagersTableSeeder extends Seeder
                 'prenom' => 'Bananes',
                 'nom'=> 'Meow',
                 'email'=> 'meowmeow@hotmail.com',
-                'password'=> 'meow1234',
+                'password'=> Hash::make('meow1234'),
                 'nb_heures'=> 35,
                 'role' => 'etudiant',
                 'niveau' => '1er annee'
@@ -33,7 +33,7 @@ class UsagersTableSeeder extends Seeder
                 'prenom' => 'Framboise',
                 'nom'=> 'Meow',
                 'email'=> 'meowmeow@hotmail.com',
-                'password'=> 'meow1234',
+                'password'=> Hash::make('meow1234'),
                 'nb_heures'=> 20,
                 'role' => 'etudiant',
                 'niveau' => '1er annee'
@@ -44,7 +44,7 @@ class UsagersTableSeeder extends Seeder
                 'prenom' => 'Mangues',
                 'nom'=> 'Meow',
                 'email'=> 'meowmeow@hotmail.com',
-                'password'=> 'meow1234',
+                'password'=> Hash::make('meow1234'),
                 'nb_heures'=> 35,
                 'role' => 'etudiant',
                 'niveau' => '1er annee'
@@ -54,7 +54,7 @@ class UsagersTableSeeder extends Seeder
                 'prenom' => 'Meow',
                 'nom'=> 'Meow',
                 'email'=> 'meowmeow@hotmail.com',
-                'password'=> 'meow1234',
+                'password'=> Hash::make('meow1234'),
                 'nb_heures'=> 15,
                 'role' => 'tuteur',
                 'niveau' => 'enseignant'
@@ -64,7 +64,7 @@ class UsagersTableSeeder extends Seeder
                 'prenom' => 'Orange',
                 'nom'=> 'Meow',
                 'email'=> 'meowmeow@hotmail.com',
-                'password'=> 'meow1234',
+                'password'=> Hash::make('meow1234'),
                 'nb_heures'=> 5,
                 'role' => 'tuteur',
                 'niveau' => 'enseignant'
@@ -74,7 +74,7 @@ class UsagersTableSeeder extends Seeder
                 'prenom' => 'Grenade',
                 'nom'=> 'Meow',
                 'email'=> 'meowmeow@hotmail.com',
-                'password'=> 'meow1234',
+                'password'=> Hash::make('meow1234'),
                 'nb_heures'=> 12,
                 'role' => 'tuteur',
                 'niveau' => 'enseignant'
@@ -84,7 +84,7 @@ class UsagersTableSeeder extends Seeder
                 'prenom' => 'Pommes',
                 'nom'=> 'Meow',
                 'email'=> 'meowmeow@hotmail.com',
-                'password'=> 'meow1234',
+                'password'=> Hash::make('meow1234'),
                 'nb_heures'=> 12,
                 'role' => 'tuteur',
                 'niveau' => 'enseignant'

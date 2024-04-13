@@ -14,7 +14,7 @@
             <div class="col-6 blanc" style="border-radius: 20px;">
                 <div class="p-3 text-center"><h1>Inscription</h1><hr/></div>
 
-                <form method="post" action="{{route(Users.store)}}">
+                <form method="post" action="{{route('usagers.store')}}">
                     @csrf
                     <div class="row p-3">
                         <div class="col-4">

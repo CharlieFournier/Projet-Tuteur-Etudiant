@@ -9,7 +9,7 @@ use Illuminate\Http\Request;
 use App\Models\Requete;
 use App\Models\Tuteur;
 use App\Models\Etudiant;
-use App\Models\User;
+use App\Models\Usager;
 
 class RequetesController extends Controller
 {
@@ -18,8 +18,8 @@ class RequetesController extends Controller
      */
     public function index()
     {
-        $tuteurs = User::all()->where('role', 'like', 'tuteur');
-        $etudiants = User::all()->where('role', 'like', 'etudiant');
+        $tuteurs = Usager::all()->where('role', 'like', 'tuteur');
+        $etudiants = Usager::all()->where('role', 'like', 'etudiant');
         $requetes = Requete::all();
 
         return view('Requetes.accueil', compact('requetes', 'tuteurs', 'etudiants'));
