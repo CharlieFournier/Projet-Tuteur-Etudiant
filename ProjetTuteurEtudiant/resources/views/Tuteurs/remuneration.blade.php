@@ -20,12 +20,18 @@
                     <h1> Bonjour |Tuteur| </h1>
                 </div>
                 <div class="col-md-6 text-end">
-                    <h5>Nombre d'heure donné: 00h
                 </div>
             </div>
 
             <div class="pt-5">
                 <h1><u>Liste des rencontres effectuées</u></h1>
+                <div class="row h-100">
+                <div class="col-md-6 text-start">
+                </div>
+                <div class="col-md-6 text-end">
+                    <h5>Nombre d'heures total: 3.5h
+                </div>
+            
 
                 <!-- ||||||||||||||||||||||||||||||||||||||||||||| -->
             <table>
@@ -50,7 +56,7 @@
     </tbody>
 </table>
 <!-- ||||||||||||||||||||||||||||||||||||||||||||| -->
-
+                </div>
             </div>
         </div>
         <div class="col-md-2 h-100">

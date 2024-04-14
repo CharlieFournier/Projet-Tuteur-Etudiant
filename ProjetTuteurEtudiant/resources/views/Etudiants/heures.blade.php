@@ -19,11 +19,17 @@
                     <h1> Bonjour |Etudiant| </h1>
                 </div>
                 <div class="col-md-6 text-end">
-                    <h5> Heure disponible: 00h </h5>
                 </div>
 
                 <div class="pt-5">
                     <h1><u>Liste des rendez-vous</u></h1>
+                    <div class="row h-100">
+                        <div class="col-md-6 text-start">
+                        </div>
+                        <div class="col-md-6 text-end">
+                            <h5> Heure disponible: 00h </h5>
+                        </div>
+
                 <!-- ||||||||||||||||||||||||||||||||||||||||||||| -->
                 <table>
     <thead>
