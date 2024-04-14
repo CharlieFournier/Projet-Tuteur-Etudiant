@@ -6,6 +6,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <title>Remuneration Tuteurs</title>
+
+    <style>
+        table {
+            margin: auto; /* Aligning the table to the center */
+            width: 80%; /* Adjust as needed */
+            border-collapse: collapse;
+        }
+        th, td {
+            border: 1px solid #dddddd;
+            text-align: left;
+            padding: 8px;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+    </style>
+
 </head>
 <body>
 <div class="container-fluid h-100" >
@@ -24,9 +41,32 @@
 
             <div class="pt-5">
                 <h1><u>Liste des rencontres effectuées</u></h1>
-                <h3> |PlaceHolder Étudiant + Date + nbrHeure|</h3>
-            </div>
 
+                <!-- ||||||||||||||||||||||||||||||||||||||||||||| -->
+            <table>
+    <thead>
+        <tr>
+            <th>Nom étudiant</th>
+            <th>Date</th>
+            <th>Nombre d'heures</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>Alice Adam</td>
+            <td>2024-02-11</td>
+            <td>1.5</td>
+        </tr>
+        <tr>
+            <td>Bob Cheveux</td>
+            <td>2023-12-07</td>
+            <td>2</td>
+        </tr>
+    </tbody>
+</table>
+<!-- ||||||||||||||||||||||||||||||||||||||||||||| -->
+
+            </div>
         </div>
         <div class="col-md-2 h-100">
         </div> 
