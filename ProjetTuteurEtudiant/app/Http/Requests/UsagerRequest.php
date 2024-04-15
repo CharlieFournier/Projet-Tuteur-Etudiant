@@ -4,14 +4,21 @@ namespace App\Http\Requests;
 
 use Illuminate\Foundation\Http\FormRequest;
 
-class UserRequest extends FormRequest
+class UsagerRequest extends FormRequest
 {
     /**
      * Determine if the user is authorized to make this request.
      */
     public function authorize(): bool
     {
-        return true;
+        return false;
+        /*return [
+            'matricule' => 'required|min:3',
+            'nom' => 'required|min:3',
+            'prenom' => 'required|min:3',
+            'email' => 'required|min:5',
+            'password' => 'required|min:3',
+        ];*/
     }
 
     /**
@@ -21,20 +28,9 @@ class UserRequest extends FormRequest
      */
     public function rules(): array
     {
-        return [
-            'matricule' => 'required|min:3',
-            'nom' => 'required|min:3',
-            'prenom' => 'required|min:3',
-            'email' => 'required|min:5',
-            'password' => 'required|min:3',
-        ];
-    }
-
-    public function messages()
-    {
         return
         [
-            
+            /*
             'matricule.required' => 'Erreur nom_usager',
             'nom.required' => 'Erreur nom ',
             'prenom.required' => 'Erreur prenom',
@@ -44,6 +40,7 @@ class UserRequest extends FormRequest
             'prenom.min' => 'Erreur prenom minimum 3 caractère',
             'email.min' => 'Erreur email minimum 5 caractère',
             'password.min' => 'Erreur password minimum 3 caractère',
+            */
         ];
     }
 }

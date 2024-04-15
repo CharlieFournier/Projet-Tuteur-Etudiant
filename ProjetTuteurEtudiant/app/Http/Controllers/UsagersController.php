@@ -2,21 +2,20 @@
 
 namespace App\Http\Controllers;
 
+use Illuminate\Http\Request;
+use App\Http\Requests\UsagerRequest;
 use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Session;
 use Illuminate\Support\Facades\Log;
 use Illuminate\Support\Facades\DB;
 
-use App\Http\Requests\UsagerRequest;
-use Illuminate\Http\Request;
-
-use App\Models\Tuteur;
-use App\Models\Etudiant;
 use App\Models\Usager;
+use App\Models\Etudiant;
+use App\Models\Tuteur;
 
 
-class UsersController extends Controller
+class UsagersController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -27,19 +26,16 @@ class UsersController extends Controller
         $tuteurs = Usager::all()->where('role', 'like', 'tuteur');
         $etudiants = Usager::all()->where('role', 'like', 'etudiant');
 
-        return view('Users.login', compact('fillable', 'tuteurs', 'etudiants'));
+        return view('Auth.login', compact('fillable', 'tuteurs', 'etudiants'));
     }
 
     public function usagerindex()
     {
         $fillable = Usager::all();
         $usagers = Usager::all();
-        return view('Users.index', compact('usagers','fillable'));
+        return view('Auth.index', compact('usagers','fillable'));
     }
 
-    /**
-     * Show the form for creating a new resource.
-     */
     public function login(Request $request)
     {
         $reussi = Auth::attempt(['matricule' => $request->matricule, 'password' => $request->password]);
@@ -68,13 +64,13 @@ class UsersController extends Controller
      */
     public function create()
     {
-        return view('Users.create');
+        return view('Auth.create');
     }
 
     /**
      * Store a newly created resource in storage.
      */
-    public function store(UserRequest $request)
+    public function store(UsagerRequest $request)
     {
         try{
             $usagers = new Usager($request->all());
@@ -82,9 +78,9 @@ class UsersController extends Controller
         }
         catch(\Throwable $e) {
             Log::debug($e);
-            return redirect()->route('Requete.index')->withErrors(['ajout n\'a pas fonctionné']);
+            return redirect()->route('Requetes.index')->withErrors(['ajout n\'a pas fonctionné']);
         }
-        return redirect()->route('Requete.index');
+        return redirect()->route('Requetes.index');
     }
 
     /**
@@ -92,7 +88,7 @@ class UsersController extends Controller
      */
     public function show(Usager $usager)
     {
-        return view('Users.show', compact('usager'));
+        return view('Auth.show', compact('usager'));
     }
 
     /**
@@ -103,7 +99,7 @@ class UsersController extends Controller
         $tuteurs = Usager::all()->where('role', 'like', 'tuteur');
         $etudiants = Usager::all()->where('role', 'like', 'etudiant');
 
-        return view('Users.edit', compact('tuteurs', 'etudiants'));
+        return view('Auth.edit', compact('tuteurs', 'etudiants'));
     }
 
     /**
@@ -135,12 +131,12 @@ class UsersController extends Controller
             
             $id->save();
             log::debug('END');
-            return redirect()->route('Users.index')->with('message', "Modification de " . $id->matricule . " réussi!");
+            return redirect()->route('usagers.index')->with('message', "Modification de " . $id->matricule . " réussi!");
         }
         catch(\Throwable $e)
         {
             Log::debug($e);
-            return redirect()->route('Users.index')->withErrors(['la modification n\'a pas fonctionné']);
+            return redirect()->route('usagers.index')->withErrors(['la modification n\'a pas fonctionné']);
         }
         return redirect()->route('usagers.index');
     }
@@ -164,5 +160,4 @@ class UsersController extends Controller
         }
             return redirect()->route('usagers.index');
     }
-
 }

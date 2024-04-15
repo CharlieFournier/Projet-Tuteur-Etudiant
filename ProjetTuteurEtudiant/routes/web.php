@@ -37,17 +37,31 @@ Route::get('/accueilEtudiant/{etudiant}',
 //----- Users ------//
 
 Route::get('/login', 
-[UsersController::class, 'index'])->name('showLogin');
+[UsagersController::class, 'index'])->name('showLogin');
 
 Route::post('/login', 
-[UsersController::class, 'login'])->name('login');
+[UsagersController::class, 'login'])->name('login');
 
 Route::post('/logout', 
-[UsersController::class, 'logout'])->name('logout')->middleware('auth');
+[UsagersController::class, 'logout'])->name('logout');
 
 Route::get('/inscription', 
-[UsersController::class, 'create'])->name('usagers.create');
+[UsagersController::class, 'create'])->name('usagers.create');
 
 Route::post('/inscription', 
-[UsersController::class, 'store'])->name('usagers.store')->middleware('auth');
+[UsagersController::class, 'store'])->name('usagers.store');
 
+Route::get('/usagers/{usager}', 
+[UsagersController::class, 'show'])->name('usager.show');
+
+Route::get('/usagers', 
+[UsagersController::class, 'usagerindex'])->name('usagers.index');
+
+Route::get('/usagers/{usager}/modifier/',
+[UsagersController::class, 'edit'])->name('usagers.edit');
+
+Route::patch('/usagers/{usager}/modifier',
+[UsagersController::class, 'update'])->name('usagers.update');
+
+Route::delete('/usagers/{usager}/supprimer', 
+[UsagersController::class, 'destroy'])->name('usagers.destroy');

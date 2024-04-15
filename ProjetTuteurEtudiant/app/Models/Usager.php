@@ -9,6 +9,8 @@ use Illuminate\Foundation\Auth\User as Authenticatable;
 use Illuminate\Notifications\Notifiable;
 use Laravel\Sanctum\HasApiTokens;
 
+// mettre dans le terminal si erreur sanctum composer require laravel/sanctum
+
 class Usager extends Authenticatable
 {
     use HasApiTokens, HasFactory, Notifiable;
@@ -16,12 +18,12 @@ class Usager extends Authenticatable
     /**
      * The attributes that are mass assignable.
      *
-     * @var string[]
+     * @var array<int, string[]>
      */
     protected $fillable = [
         'matricule',
-        'nom',
         'prenom',
+        'nom',
         'email',
         'password',
         'nb_heures',
@@ -32,7 +34,7 @@ class Usager extends Authenticatable
     /**
      * The attributes that should be hidden for serialization.
      *
-     * @var string[]
+     * @var array<int, string[]>
      */
     protected $hidden = [
         'password',

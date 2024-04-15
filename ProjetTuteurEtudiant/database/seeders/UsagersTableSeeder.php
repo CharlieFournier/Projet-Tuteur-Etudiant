@@ -25,7 +25,10 @@ class UsagersTableSeeder extends Seeder
                 'password'=> Hash::make('meow1234'),
                 'nb_heures'=> 35,
                 'role' => 'etudiant',
-                'niveau' => '1er annee'
+                'niveau' => '1er annee',
+                'remember_token' => Str::random(10),
+                'created_at' => now(),
+                'updated_at' => now(),
             ],
             [
                 
@@ -36,7 +39,10 @@ class UsagersTableSeeder extends Seeder
                 'password'=> Hash::make('meow1234'),
                 'nb_heures'=> 20,
                 'role' => 'etudiant',
-                'niveau' => '1er annee'
+                'niveau' => '1er annee',
+                'remember_token' => Str::random(10),
+                'created_at' => now(),
+                'updated_at' => now(),
             ],
             [
                 
@@ -47,7 +53,10 @@ class UsagersTableSeeder extends Seeder
                 'password'=> Hash::make('meow1234'),
                 'nb_heures'=> 35,
                 'role' => 'etudiant',
-                'niveau' => '1er annee'
+                'niveau' => '1er annee',
+                'remember_token' => Str::random(10),
+                'created_at' => now(),
+                'updated_at' => now(),
             ],
             [
                 'matricule' => 2052524,
@@ -57,7 +66,10 @@ class UsagersTableSeeder extends Seeder
                 'password'=> Hash::make('meow1234'),
                 'nb_heures'=> 15,
                 'role' => 'tuteur',
-                'niveau' => 'enseignant'
+                'niveau' => 'enseignant',
+                'remember_token' => Str::random(10),
+                'created_at' => now(),
+                'updated_at' => now(),
             ],
             [
                 'matricule' => 7894562,
@@ -67,7 +79,10 @@ class UsagersTableSeeder extends Seeder
                 'password'=> Hash::make('meow1234'),
                 'nb_heures'=> 5,
                 'role' => 'tuteur',
-                'niveau' => 'enseignant'
+                'niveau' => 'enseignant',
+                'remember_token' => Str::random(10),
+                'created_at' => now(),
+                'updated_at' => now(),
             ],
             [
                 'matricule' => 6543217,
@@ -77,7 +92,10 @@ class UsagersTableSeeder extends Seeder
                 'password'=> Hash::make('meow1234'),
                 'nb_heures'=> 12,
                 'role' => 'tuteur',
-                'niveau' => 'enseignant'
+                'niveau' => 'enseignant',
+                'remember_token' => Str::random(10),
+                'created_at' => now(),
+                'updated_at' => now(),
             ],
             [
                 'matricule' => 6547227,
@@ -87,7 +105,10 @@ class UsagersTableSeeder extends Seeder
                 'password'=> Hash::make('meow1234'),
                 'nb_heures'=> 12,
                 'role' => 'tuteur',
-                'niveau' => 'enseignant'
+                'niveau' => 'enseignant',
+                'remember_token' => Str::random(10),
+                'created_at' => now(),
+                'updated_at' => now(),
             ]
             ]);
     }

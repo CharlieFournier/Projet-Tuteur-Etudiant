@@ -1,6 +1,6 @@
 @extends('layouts.app')
 
-@section('title', "Page d'acceuil Netflix")
+@section('title', "Page d'acceuil utilisateur")
 
 @section('contenu')
 
@@ -10,18 +10,18 @@
             <div class="row">
                 <div class="col-xl-2"></div>
                 <div class="col-xl-6">
-                    <h1>Nom de l'utilisateur: {{$user->matricule}}</h1>
+                    <h1>Nom de l'utilisateur: {{$usager->matricule}}</h1>
                     <br>
-                    <h2>Prénom: {{$user->prenom}}</h2>
-                    <h2>Nom: {{$user->nom}}</h2>
+                    <h2>Prénom: {{$usager->prenom}}</h2>
+                    <h2>Nom: {{$usager->nom}}</h2>
                     <br>
-                    <h3>Email: {{$user->email}}</h3>
+                    <h3>Email: {{$usager->email}}</h3>
                     <br>
-                    <h5>Role: {{$user->role}}</h5>
+                    <h5>Role: {{$usager->role}}</h5>
                 </div>
                 <div class="col-xl-2 text-left">
                     <br><br><br><br><br><br>
-                    <a href="{{route('users.edit', [$user])}}" class="btn btn-danger">
+                    <a href="{{route('usagers.edit', [$usager])}}" class="btn btn-danger">
                         Editer l'utilisateur
                     </a>
                 </div>
@@ -30,5 +30,4 @@
         </div>
     </section>
 </div>
-
 @endsection
