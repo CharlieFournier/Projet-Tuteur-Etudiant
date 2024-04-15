@@ -47,8 +47,9 @@ html, body {
 .palefonce {
     background-color: lightgray;
 }
-.navbar-light, .navbar-brand {
-    color: #FFFFFF;
+
+.m-0 {
+    margin:0px;
 }
 
 

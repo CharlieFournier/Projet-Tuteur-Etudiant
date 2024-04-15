@@ -14,73 +14,93 @@
 
                     <div class="row justify-content-end align-items-end h-8">
                         <div class="col-6 h-100 p-0">
-                            <div class="card h-100 justify-content-right"></div>   
+                            <div class="card h-100 justify-content-center align-text-center text-center">
+                                <p class="m-0">8h00 - 8h50</p>
+                            </div>   
                         </div> 
                     </div>
 
                     <div class="row justify-content-end align-items-end h-8">
                         <div class="col-6 h-100 p-0">
-                            <div class="card h-100 justify-content-right"></div>   
+                            <div class="card h-100 justify-content-center align-text-center text-center">
+                                <p class="m-0">8h55 - 9h45</p>
+                            </div>   
                         </div> 
                     </div>
 
                     <div class="row justify-content-end align-items-end h-8">
                         <div class="col-6 h-100 p-0">
-                            <div class="card h-100 justify-content-right"></div>   
+                            <div class="card h-100 justify-content-center align-text-center text-center">
+                                <p class="m-0">9h50 - 10h40</p>
+                            </div>     
                         </div> 
                     </div>
 
                     <div class="row justify-content-end align-items-end h-8">
                         <div class="col-6 h-100 p-0">
-                            <div class="card h-100 justify-content-right"></div>   
+                            <div class="card h-100 justify-content-center align-text-center text-center">
+                                <p class="m-0">10h45 - 11h35</p>
+                            </div>     
                         </div> 
                     </div>
 
                     <div class="row justify-content-end align-items-end h-8">
                         <div class="col-6 h-100 p-0">
-                            <div class="card h-100 justify-content-right"></div>   
+                            <div class="card h-100 justify-content-center align-text-center text-center"></div>    
                         </div> 
                     </div>
 
                     <div class="row justify-content-end align-items-end h-8">
                         <div class="col-6 h-100 p-0">
-                            <div class="card h-100 justify-content-right"></div>   
+                            <div class="card h-100 justify-content-center align-text-center text-center">
+                                <p class="m-0">12h10 - 13h00</p>
+                            </div>  
                         </div> 
                     </div>
 
                     <div class="row justify-content-end align-items-end h-8">
                         <div class="col-6 h-100 p-0">
-                            <div class="card h-100 justify-content-right"></div>   
+                            <div class="card h-100 justify-content-center align-text-center text-center">
+                                <p class="m-0">13h05 - 13h55</p>
+                            </div>  
                         </div> 
                     </div>
 
                     <div class="row justify-content-end align-items-end h-8">
                         <div class="col-6 h-100 p-0">
-                            <div class="card h-100 justify-content-right"></div>   
+                            <div class="card h-100 justify-content-center align-text-center text-center">
+                                <p class="m-0">14h00 - 14h50</p>
+                            </div>    
                         </div> 
                     </div>
 
                     <div class="row justify-content-end align-items-end h-8">
                         <div class="col-6 h-100 p-0">
-                            <div class="card h-100 justify-content-right"></div>   
+                            <div class="card h-100 justify-content-center align-text-center text-center"></div>  
                         </div> 
                     </div>
 
                     <div class="row justify-content-end align-items-end h-8">
                         <div class="col-6 h-100 p-0">
-                            <div class="card h-100 justify-content-right"></div>   
+                            <div class="card h-100 justify-content-center align-text-center text-center">
+                                <p class="m-0">15h05 - 15h55</p>
+                            </div>    
                         </div> 
                     </div>
 
                     <div class="row justify-content-end align-items-end h-8">
                         <div class="col-6 h-100 p-0">
-                            <div class="card h-100 justify-content-right"></div>   
+                            <div class="card h-100 justify-content-center align-text-center text-center">
+                                <p class="m-0">16h00 - 16h50</p>
+                            </div>    
                         </div> 
                     </div>
 
                     <div class="row justify-content-end align-items-end h-8">
                         <div class="col-6 h-100 p-0">
-                            <div class="card h-100 justify-content-right"></div>   
+                            <div class="card h-100 justify-content-center align-text-center text-center">
+                                <p class="m-0">16h55 - 17h45</p>
+                            </div>    
                         </div> 
                     </div>
 
