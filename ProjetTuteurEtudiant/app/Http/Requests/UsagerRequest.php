@@ -11,14 +11,7 @@ class UsagerRequest extends FormRequest
      */
     public function authorize(): bool
     {
-        return false;
-        /*return [
-            'matricule' => 'required|min:3',
-            'nom' => 'required|min:3',
-            'prenom' => 'required|min:3',
-            'email' => 'required|min:5',
-            'password' => 'required|min:3',
-        ];*/
+        return true;
     }
 
     /**
@@ -28,9 +21,21 @@ class UsagerRequest extends FormRequest
      */
     public function rules(): array
     {
-        return
+        return 
         [
-            /*
+            'matricule' => 'required|min:3',
+            'nom' => 'required|min:3',
+            'prenom' => 'required|min:3',
+            'email' => 'required|min:5',
+            'password' => 'required|min:3',
+        ];
+    }
+
+    public function messages()
+    {
+        return 
+        [
+            
             'matricule.required' => 'Erreur nom_usager',
             'nom.required' => 'Erreur nom ',
             'prenom.required' => 'Erreur prenom',
@@ -40,7 +45,6 @@ class UsagerRequest extends FormRequest
             'prenom.min' => 'Erreur prenom minimum 3 caractère',
             'email.min' => 'Erreur email minimum 5 caractère',
             'password.min' => 'Erreur password minimum 3 caractère',
-            */
         ];
     }
 }
