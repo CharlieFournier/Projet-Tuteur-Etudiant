@@ -26,6 +26,10 @@ html, body {
 
 .h-89 {
     height: 89%;
+}
+
+.h-87 {
+    height: 87%;
 } 
 
 .cegep1 {
@@ -42,6 +46,9 @@ html, body {
 
 .palefonce {
     background-color: lightgray;
+}
+.navbar-light, .navbar-brand {
+    color: #FFFFFF;
 }
 
 

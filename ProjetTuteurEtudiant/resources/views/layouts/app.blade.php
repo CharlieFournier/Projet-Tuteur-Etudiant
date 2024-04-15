@@ -14,10 +14,10 @@
     <!-- HEADER -->
     <header>
 
-    <nav class="navbar navbar-expand-lg navbar-light cegep1 text-center">
+    <nav class="navbar navbar-expand-lg navbar-light cegep1 text-center" style="color: #FFFFFF;">
         <div class="container-fluid">
 
-            <a class="navbar-brand" href="{{route('users.login')}}">Projet Tutorat</a>
+            <a class="navbar-brand" style="color: #FFFFFF;" href="{{route('users.login')}}">Projet Tutorat</a>
 
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -28,11 +28,11 @@
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
 
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="{{route('Requetes.index')}}">Accueil</a>
+                        <a class="nav-link active" style="color: #FFFFFF;" aria-current="page" href="{{route('Requetes.index')}}">Accueil</a>
                     </li>
 
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Tuteurs</a>
+                        <a class="nav-link" style="color: #FFFFFF;" href="#">Tuteurs</a>
                     </li>
 
                 </ul>
@@ -44,13 +44,13 @@
 
     </header>
     <!-- END OF HEADER -->
-    <div class="h-89">
+    <div class="h-87">
     @yield('contenu')
     </div>
     <!-- FOOTER -->
     <!-- END OF LINKS -->
 
-    <footer class="text-center cegep1" style="padding-bottom: 4px; padding-top: 9px;">
+    <footer class="text-center cegep1" style="padding-bottom: 3px; padding-top: 6px; color: #FFFFFF;">
       <p>&copy 1968-2024 Cegep de Trois-Rivières.</p>
       <p style="margin-block-end: 0em;">Charlie Fournier & Roselyne Martin & Nicolas Veilleux &copy 2024</p>
     </footer>
