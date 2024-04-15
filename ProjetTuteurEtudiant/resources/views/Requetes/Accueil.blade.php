@@ -18,8 +18,53 @@
                     </div>
                 </div>
 
-                
+                <div class="row h-15">
+                <div class="col-6 card card-event-design text-center">
+                        <h1 id="text-event "> Demande d'aide </h1>
+                    </div>
+                    <div class="col-6 card card-event-design text-center">
+                        <h1 id="text-event "> Demande d'aide </h1>
+                    </div>
+                </div>
+
+                <div class="row h-15">
+                    <div class="col-6 card card-event-design text-center">
+                        <h1 id="text-event "> Demande d'aide </h1>
+                    </div>
+                    <div class="col-6 card card-event-design text-center">
+                        <h1 id="text-event "> Demande d'aide </h1>
+                    </div>
+                </div>
+
+                <div class="row h-15">
+                <div class="col-6 card card-event-design text-center">
+                        <h1 id="text-event "> Demande d'aide </h1>
+                    </div>
+                    <div class="col-6 card card-event-design text-center">
+                        <h1 id="text-event "> Demande d'aide </h1>
+                    </div>
+                </div>
+
+                <div class="row h-15">
+                <div class="col-6 card card-event-design text-center">
+                        <h1 id="text-event "> Demande d'aide </h1>
+                    </div>
+                    <div class="col-6 card card-event-design text-center">
+                        <h1 id="text-event "> Demande d'aide </h1>
+                    </div>
+                </div>
+
+                <div class="row h-15">
+                <div class="col-6 card card-event-design text-center">
+                        <h1 id="text-event "> Demande d'aide </h1>
+                    </div>
+                    <div class="col-6 card card-event-design text-center">
+                        <h1 id="text-event "> Demande d'aide </h1>
+                    </div>
+                </div>
+
             </div>
+
             <div class="col-2">
                 <div class="row h-50">
                     <div class="col-12 text-start card card-conteneur text-center p-0">

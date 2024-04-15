@@ -31,3 +31,17 @@ html, body {
 .cegep1 {
     background-color: #092D74;
 }
+
+.h-8 {
+    height: 8%;
+}
+
+.h-4 {
+    height: 4%;
+}
+
+.palefonce {
+    background-color: lightgray;
+}
+
+
