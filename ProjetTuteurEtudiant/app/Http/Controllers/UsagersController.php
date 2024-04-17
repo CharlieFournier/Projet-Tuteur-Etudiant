@@ -69,21 +69,14 @@ class UsagersController extends Controller
      */
     public function store(UsagerRequest $request)
     {
-        Log::debug("AAAAAAAAAAAAAAAAAAAA");
         try{
-            Log::debug("BBBBBBBBBBBBBBBBBBBBBBB");
             $usagers = new Usager($request->all());
-            Log::debug("CCCCCCCCCCCCCCCCCCCCCC");
             $usagers->save();
-            Log::debug("DDDDDDDDDDDDDDDDDDDDD");
         }
         catch(\Throwable $e) {
-            Log::debug("EEEEEEEEEEEEEEEEE");
             Log::debug($e);
-            Log::debug("FFFFFFFFFFFFFFFFFFFFFF");
             return redirect()->route('Requetes.index')->withErrors(['ajout n\'a pas fonctionné']);
         }
-        Log::debug("GGGGGGGGGGGGGGGGGG");
         return redirect()->route('Requetes.index');
     }
 

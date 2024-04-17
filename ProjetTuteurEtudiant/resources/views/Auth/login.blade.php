@@ -21,12 +21,11 @@
         </button>
     </div>
     <div class="p-3 text-center">
-    <a class="nav-link" href="{{route('usagers.create')}}">
-        <button class="btn" style="background-color: rgba(255,192,203,0.5); border-color: black;" type="button">
-            Inscription
-        </button>
-    </a>    
-    
+        <a class="nav-link" href="{{route('usagers.create')}}">
+            <button class="btn" style="background-color: rgba(255,192,203,0.5); border-color: black;" type="button">
+                S'inscrire
+            </button>
+        </a>
     </div>
 </form>
 

@@ -59,6 +59,14 @@
         <button class="btn" style="background-color: rgba(255,192,203,0.5); border-color: black;" type="submit">
             S'inscrire
         </button>
+        <br>
+    </div>
+    <div class="p-3 text-center">
+        <a class="nav-link" href="{{route('login')}}">
+            <button class="btn" style="background-color: rgba(255,192,203,0.5); border-color: black;" type="button">
+                Se connecter
+            </button>
+        </a>
     </div>
 </form>
 @endsection
