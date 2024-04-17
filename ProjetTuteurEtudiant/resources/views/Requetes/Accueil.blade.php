@@ -4,9 +4,7 @@
 
 @section('contenu')
     <div class="container-fluid h-100">
-        <div class="row text-center h-100">
-
-                    
+        <div class="row text-center h-100">  
             <div class="col-10">
 
                 <div class="row h-15">
