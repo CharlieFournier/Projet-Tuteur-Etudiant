@@ -35,30 +35,20 @@
     </div>
     <div class="row p-3">
         <div class="col-4">
-            <label class="form-label" for="role">Role : </label>
-            <input class="form-control" type="text" id="role" name="role">
-            <!--
             <label class="form-label" for="role">Rôle : </label>
-            <br>
-            <input type="radio" id="role" name="role">
-            <label class="form-label" for="role">Tuteur</label>
-            <br>
-            <input type="radio" id="role" name="role">
-            <label class="form-label" for="role">Etudiant</label>
-            -->
+            <select name="role" id="role" type="text" class="form-control" placeholder="Veuillez choisir...">
+                <option value="tuteur">Tuteur</option>
+                <option value="etudiant">Étudiant</option>
+            </select>
         </div>
         <div class="col-4">
             <label class="form-label" for="niveau">Niveau : </label>
-            <input class="form-control" type="text" id="niveau" name="niveau">
-            <!--
-            <label class="form-label" for="niveau">Niveau : </label>
             <select name="niveau" id="niveau" type="text" class="form-control" placeholder="Veuillez choisir...">
-                <option value="niveau">1iere annee</option>
-                <option value="niveau">2ieme annee</option>
-                <option value="niveau">3ieme annee</option>
-                <option value="niveau">Enseignant</option>
+                <option value="1iere annee">1iere annee</option>
+                <option value="2ieme annee">2ieme annee</option>
+                <option value="3ieme annee">3ieme annee</option>
+                <option value="Enseignant">Enseignant</option>
             </select>
-            -->
         </div>
         <div class="col-4">
             <label class="form-label" for="nb_heures">Nombre d'heure : </label>

@@ -17,7 +17,7 @@ class UsagersTableSeeder extends Seeder
     {
         DB::table('usagers')->insert([
             [
-                
+                'id' => 1,
                 'matricule' => 1234567,
                 'prenom' => 'Bananes',
                 'nom'=> 'Meow',
@@ -31,7 +31,7 @@ class UsagersTableSeeder extends Seeder
                 'updated_at' => now(),
             ],
             [
-                
+                'id' => 2,
                 'matricule' => 8675439,
                 'prenom' => 'Framboise',
                 'nom'=> 'Meow',
@@ -45,7 +45,7 @@ class UsagersTableSeeder extends Seeder
                 'updated_at' => now(),
             ],
             [
-                
+                'id' => 3,
                 'matricule' => 8693922,
                 'prenom' => 'Mangues',
                 'nom'=> 'Meow',
@@ -59,6 +59,7 @@ class UsagersTableSeeder extends Seeder
                 'updated_at' => now(),
             ],
             [
+                'id' => 4,
                 'matricule' => 2052524,
                 'prenom' => 'Meow',
                 'nom'=> 'Meow',
@@ -72,6 +73,7 @@ class UsagersTableSeeder extends Seeder
                 'updated_at' => now(),
             ],
             [
+                'id' => 5,
                 'matricule' => 7894562,
                 'prenom' => 'Orange',
                 'nom'=> 'Meow',
@@ -85,6 +87,7 @@ class UsagersTableSeeder extends Seeder
                 'updated_at' => now(),
             ],
             [
+                'id' => 6,
                 'matricule' => 6543217,
                 'prenom' => 'Grenade',
                 'nom'=> 'Meow',
@@ -98,6 +101,7 @@ class UsagersTableSeeder extends Seeder
                 'updated_at' => now(),
             ],
             [
+                'id' => 7,
                 'matricule' => 6547227,
                 'prenom' => 'Pommes',
                 'nom'=> 'Meow',
@@ -110,6 +114,6 @@ class UsagersTableSeeder extends Seeder
                 'created_at' => now(),
                 'updated_at' => now(),
             ]
-            ]);
+        ]);
     }
 }
