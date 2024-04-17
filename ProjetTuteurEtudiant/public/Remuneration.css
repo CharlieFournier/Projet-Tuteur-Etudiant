@@ -1,0 +1,31 @@
+body {
+    background-color: #092D74!important; /* Bleu foncé */
+    color: #d9d9d9; /* Blanc doux */
+    font-family: Arial, sans-serif; /* Police de caractère par défaut */
+    margin: 0;
+    padding: 0;
+}
+
+table {
+    margin: auto; /* Aligning the table to the center */
+    width: 80%; /* Adjust as needed */
+    border-collapse: collapse;
+    background-color: #04477F; /* Bleu foncé */
+    color: #d9d9d9; /* Blanc doux */
+}
+
+th {
+    background-color: #04477F; /* Bleu foncé */
+    color: #d9d9d9; /* Blanc doux */
+    text-align: left;
+    padding: 8px;
+    border: 1px solid #000; /* Bordure noire */
+}
+
+td {
+    background-color: #0E5AA7; /* Bleu moyen */
+    color: #d9d9d9; /* Blanc doux */
+    border: 1px solid #000; /* Bordure noire */
+    text-align: left;
+    padding: 8px;
+}

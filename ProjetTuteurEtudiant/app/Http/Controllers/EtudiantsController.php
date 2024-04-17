@@ -17,6 +17,11 @@ class EtudiantsController extends Controller
         return view('Etudiants.accueil');
     }
 
+    public function heures()
+    {
+        return view('Etudiants.heures');
+    }
+
     /**
      * Show the form for creating a new resource.
      */
