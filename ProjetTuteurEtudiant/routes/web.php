@@ -41,5 +41,13 @@ Route::get('/heuresEtudiant',
 Route::get('/connexion', 
 [UsersController::class, 'login'])->name('users.login');
 
+<<<<<<< Updated upstream
 Route::get('/inscription', 
 [UsersController::class, 'create'])->name('users.create');
+=======
+Route::get('/adminlogin', 
+[AdminController::class, 'login'])->name('admin.login');
+
+//------- Commentaires -------//
+
+>>>>>>> Stashed changes
