@@ -34,7 +34,8 @@ Route::get('/remunerationTuteur',
 Route::get('/accueilEtudiant/{etudiant}', 
 [EtudiantsController::class, 'show'])->name('Etudiants.show');
 
-
+Route::get('/heuresEtudiant', 
+[EtudiantsController::class, 'heures'])->name('Etudiants.heures');
 //----- Users ------//
 
 Route::get('/connexion', 
