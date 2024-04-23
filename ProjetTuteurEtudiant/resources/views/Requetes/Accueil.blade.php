@@ -7,7 +7,7 @@
     <div class="row text-center h-100">
 
         <div class="col-10 h-100">
-            <div class="row h-100">
+            <div class="row h-100">     <!-- Colonne des heures -->
                 <div class="col-2 h-100">
 
                     <div class="row justify-content-center align-items-center h-4"></div>
@@ -106,7 +106,7 @@
 
                 </div>
 
-                <div class="col-10">
+                <div class="col-10">        <!-- Colonne jour l'horaire -->
                     <div class="row align-items-center h-4">
 
                         <div class="col-2 h-100 p-0">
@@ -131,7 +131,7 @@
 
                     </div>
 
-                    <div class="row align-items-center h-8">
+                    <div class="row align-items-center h-8"> <!-- Colonne 8h00 a 8h50 de l'horaire -->
 
                         <div class="col-2 h-100 p-0">
                             <div class="card h-100 justify-content-center"></div>   
