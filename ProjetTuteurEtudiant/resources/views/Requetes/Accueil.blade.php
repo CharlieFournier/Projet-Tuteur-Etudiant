@@ -44,7 +44,7 @@
                         </div> 
                     </div>
 
-                    <div class="row justify-content-end align-items-end h-8">
+                    <div class="row justify-content-end align-items-end h-4">
                         <div class="col-6 h-100 p-0">
                             <div class="card h-100 justify-content-center align-text-center text-center"></div>    
                         </div> 
@@ -74,7 +74,7 @@
                         </div> 
                     </div>
 
-                    <div class="row justify-content-end align-items-end h-8">
+                    <div class="row justify-content-end align-items-end h-4 ">
                         <div class="col-6 h-100 p-0">
                             <div class="card h-100 justify-content-center align-text-center text-center"></div>  
                         </div> 
@@ -137,6 +137,291 @@
 <!------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- -->
 
                     <div class="row align-items-center h-8"> <!-- Colonne 8h00 a 8h50 de l'horaire -->
+
+                        <div class="col-2 h-100 p-0">
+                            <div class="card h-100 justify-content-center"></div>   
+                        </div>
+
+                        <div class="col-2 h-100 p-0">
+                            <div class="card h-100 justify-content-center"></div> 
+                        </div>
+
+                        <div class="col-2 h-100 p-0">
+                            <div class="card h-100 justify-content-center"></div>
+                        </div> 
+
+                        <div class="col-2 h-100 p-0">
+                            <div class="card h-100 justify-content-center"></div>
+                        </div> 
+
+                        <div class="col-2 h-100 p-0">
+                            <div class="card h-100 justify-content-center"></div>
+                        </div>
+
+                    </div>
+
+<!------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- -->
+
+                    <div class="row align-items-center h-8"> <!-- Colonne 8h55 a 9h45 de l'horaire -->
+
+                        <div class="col-2 h-100 p-0">
+                            <div class="card h-100 justify-content-center"></div>   
+                        </div>
+
+                        <div class="col-2 h-100 p-0">
+                            <div class="card h-100 justify-content-center"></div> 
+                        </div>
+
+                        <div class="col-2 h-100 p-0">
+                            <div class="card h-100 justify-content-center"></div>
+                        </div> 
+
+                        <div class="col-2 h-100 p-0">
+                            <div class="card h-100 justify-content-center"></div>
+                        </div> 
+
+                        <div class="col-2 h-100 p-0">
+                            <div class="card h-100 justify-content-center"></div>
+                        </div>
+
+                    </div>
+
+<!------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- -->
+
+                    <div class="row align-items-center h-8"> <!-- Colonne 9h50 a 10h40 de l'horaire -->
+
+                        <div class="col-2 h-100 p-0">
+                            <div class="card h-100 justify-content-center"></div>   
+                        </div>
+
+                        <div class="col-2 h-100 p-0">
+                            <div class="card h-100 justify-content-center"></div> 
+                        </div>
+
+                        <div class="col-2 h-100 p-0">
+                            <div class="card h-100 justify-content-center"></div>
+                        </div> 
+
+                        <div class="col-2 h-100 p-0">
+                            <div class="card h-100 justify-content-center"></div>
+                        </div> 
+
+                        <div class="col-2 h-100 p-0">
+                            <div class="card h-100 justify-content-center"></div>
+                        </div>
+
+                    </div>
+
+<!------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- -->
+
+                    <div class="row align-items-center h-8"> <!-- Colonne 10h45 a 11h35 de l'horaire -->
+
+                        <div class="col-2 h-100 p-0">
+                            <div class="card h-100 justify-content-center"></div>   
+                        </div>
+
+                        <div class="col-2 h-100 p-0">
+                            <div class="card h-100 justify-content-center"></div> 
+                        </div>
+
+                        <div class="col-2 h-100 p-0">
+                            <div class="card h-100 justify-content-center"></div>
+                        </div> 
+
+                        <div class="col-2 h-100 p-0">
+                            <div class="card h-100 justify-content-center"></div>
+                        </div> 
+
+                        <div class="col-2 h-100 p-0">
+                            <div class="card h-100 justify-content-center"></div>
+                        </div>
+
+                    </div>
+
+<!------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- -->
+
+                    <div class="row align-items-center h-4"> <!-- Colonne du midi de l'horaire -->
+
+                        <div class="col-2 h-100 p-0">
+                            <div class="card h-100 justify-content-center"></div>   
+                        </div>
+
+                        <div class="col-2 h-100 p-0">
+                            <div class="card h-100 justify-content-center"></div> 
+                        </div>
+
+                        <div class="col-2 h-100 p-0">
+                            <div class="card h-100 justify-content-center"></div>
+                        </div> 
+
+                        <div class="col-2 h-100 p-0">
+                            <div class="card h-100 justify-content-center"></div>
+                        </div> 
+
+                        <div class="col-2 h-100 p-0">
+                            <div class="card h-100 justify-content-center"></div>
+                        </div>
+
+                    </div>
+
+<!------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- -->
+
+                    <div class="row align-items-center h-8"> <!-- Colonne 12h10 a 13h00 de l'horaire -->
+
+                        <div class="col-2 h-100 p-0">
+                            <div class="card h-100 justify-content-center"></div>   
+                        </div>
+
+                        <div class="col-2 h-100 p-0">
+                            <div class="card h-100 justify-content-center"></div> 
+                        </div>
+
+                        <div class="col-2 h-100 p-0">
+                            <div class="card h-100 justify-content-center"></div>
+                        </div> 
+
+                        <div class="col-2 h-100 p-0">
+                            <div class="card h-100 justify-content-center"></div>
+                        </div> 
+
+                        <div class="col-2 h-100 p-0">
+                            <div class="card h-100 justify-content-center"></div>
+                        </div>
+
+                    </div>
+
+<!------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- -->
+
+                    <div class="row align-items-center h-8"> <!-- Colonne 13h05 a 13h55 de l'horaire -->
+
+                        <div class="col-2 h-100 p-0">
+                            <div class="card h-100 justify-content-center"></div>   
+                        </div>
+
+                        <div class="col-2 h-100 p-0">
+                            <div class="card h-100 justify-content-center"></div> 
+                        </div>
+
+                        <div class="col-2 h-100 p-0">
+                            <div class="card h-100 justify-content-center"></div>
+                        </div> 
+
+                        <div class="col-2 h-100 p-0">
+                            <div class="card h-100 justify-content-center"></div>
+                        </div> 
+
+                        <div class="col-2 h-100 p-0">
+                            <div class="card h-100 justify-content-center"></div>
+                        </div>
+
+                    </div>
+
+<!------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- -->
+
+                    <div class="row align-items-center h-8"> <!-- Colonne 14h00 a 14h50 de l'horaire -->
+
+                        <div class="col-2 h-100 p-0">
+                            <div class="card h-100 justify-content-center"></div>   
+                        </div>
+
+                        <div class="col-2 h-100 p-0">
+                            <div class="card h-100 justify-content-center"></div> 
+                        </div>
+
+                        <div class="col-2 h-100 p-0">
+                            <div class="card h-100 justify-content-center"></div>
+                        </div> 
+
+                        <div class="col-2 h-100 p-0">
+                            <div class="card h-100 justify-content-center"></div>
+                        </div> 
+
+                        <div class="col-2 h-100 p-0">
+                            <div class="card h-100 justify-content-center"></div>
+                        </div>
+
+                    </div>
+
+<!------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- -->
+                    <div class="row align-items-center h-4"> <!-- Colonne Pause 14h50 a 15h05 de l'horaire -->
+
+                        <div class="col-2 h-100 p-0">
+                            <div class="card h-100 justify-content-center"></div>   
+                        </div>
+
+                        <div class="col-2 h-100 p-0">
+                            <div class="card h-100 justify-content-center"></div> 
+                        </div>
+
+                        <div class="col-2 h-100 p-0">
+                            <div class="card h-100 justify-content-center"></div>
+                        </div> 
+
+                        <div class="col-2 h-100 p-0">
+                            <div class="card h-100 justify-content-center"></div>
+                        </div> 
+
+                        <div class="col-2 h-100 p-0">
+                            <div class="card h-100 justify-content-center"></div>
+                        </div>
+
+                    </div>
+
+<!------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- -->
+
+                    <div class="row align-items-center h-8"> <!-- Colonne 15h05 a 15h55 de l'horaire -->
+
+                        <div class="col-2 h-100 p-0">
+                            <div class="card h-100 justify-content-center"></div>   
+                        </div>
+
+                        <div class="col-2 h-100 p-0">
+                            <div class="card h-100 justify-content-center"></div> 
+                        </div>
+
+                        <div class="col-2 h-100 p-0">
+                            <div class="card h-100 justify-content-center"></div>
+                        </div> 
+
+                        <div class="col-2 h-100 p-0">
+                            <div class="card h-100 justify-content-center"></div>
+                        </div> 
+
+                        <div class="col-2 h-100 p-0">
+                            <div class="card h-100 justify-content-center"></div>
+                        </div>
+            
+                    </div>
+
+<!------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- -->
+
+                    <div class="row align-items-center h-8"> <!-- Colonne 16h00 a 16h50 de l'horaire -->
+
+                        <div class="col-2 h-100 p-0">
+                            <div class="card h-100 justify-content-center"></div>   
+                        </div>
+
+                        <div class="col-2 h-100 p-0">
+                            <div class="card h-100 justify-content-center"></div> 
+                        </div>
+
+                        <div class="col-2 h-100 p-0">
+                            <div class="card h-100 justify-content-center"></div>
+                        </div> 
+
+                        <div class="col-2 h-100 p-0">
+                            <div class="card h-100 justify-content-center"></div>
+                        </div> 
+
+                        <div class="col-2 h-100 p-0">
+                            <div class="card h-100 justify-content-center"></div>
+                        </div>
+
+                    </div>
+
+<!------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- -->
+
+                    <div class="row align-items-center h-8"> <!-- Colonne 16h55 a 17h45 de l'horaire -->
 
                         <div class="col-2 h-100 p-0">
                             <div class="card h-100 justify-content-center"></div>   
