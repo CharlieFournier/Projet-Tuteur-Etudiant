@@ -93,12 +93,10 @@ class UsagersController extends Controller
      */
     public function edit(Usager $usager)
     {
-        $tuteurs = Usager::all()->where('role', 'like', 'tuteur');
-        $etudiants = Usager::all()->where('role', 'like', 'etudiant');
         $roles = Usager::orderBy('role')->get();
         $niveaux = Usager::orderBy('niveau')->get();
 
-        return view('Auth.edit', compact('usager', 'roles', 'niveaux', 'tuteurs', 'etudiants'));
+        return view('Auth.edit', compact('usager', 'roles', 'niveaux'));
     }
 
     /**
@@ -109,25 +107,16 @@ class UsagersController extends Controller
         log::debug('loop update debut');
         try
         {
-            log::debug('debut try');
             $id->matricule = $request->matricule;
-            log::debug('matricule');
             $id->nom = $request->nom;
-            log::debug('nom');
             $id->prenom = $request->prenom;
-            log::debug('prenom');
             $id->email = $request->email;
-            log::debug('email');
-            $id->pwd = $request->pwd;
-            log::debug('pwd');
+            $id->password = $request->password;
             $id->nb_heures = $request->nb_heures;
-            log::debug('nb_heures');
             $id->role = $request->role;
-            log::debug('role');
             $id->niveau = $request->niveau;
-            log::debug('niveau');
 
-            
+            log::debug('avant save');
             $id->save();
             log::debug('END');
             return redirect()->route('usagers.index')->with('message', "Modification de " . $id->matricule . " réussi!");
