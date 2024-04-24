@@ -18,5 +18,7 @@ class DatabaseSeeder extends Seeder
         $this->call(GradesSeeder::class);
         $this->call(MatieresSeeder::class);
         $this->call(TuteursMatieresSeeder::class);
+        $this->call(CalendrierJourSeeder::class);
+        $this->call(CalendrierNoteSeeder::class);
     }
 }
