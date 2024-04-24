@@ -9,6 +9,8 @@ use App\Models\Requete;
 use App\Models\Tuteur;
 use App\Models\Etudiant;
 use App\Models\User;
+use App\Models\CalendrierJour;
+use App\Models\CalendrierNote;
 
 class RequetesController extends Controller
 {
@@ -20,8 +22,11 @@ class RequetesController extends Controller
         $tuteurs = User::all()->where('role', 'like', 'tuteur');
         $etudiants = User::all()->where('role', 'like', 'etudiant');
         $requetes = Requete::all();
+        $CalJour = CalendrierJour::all();
+        $CalNote = CalendrierNote::all();
 
-        return view('Requetes.accueil', compact('requetes', 'tuteurs', 'etudiants'));
+
+        return view('Requetes.accueil', compact('requetes', 'tuteurs', 'etudiants','CalJour', 'CalNote'));
     }
 
     /**

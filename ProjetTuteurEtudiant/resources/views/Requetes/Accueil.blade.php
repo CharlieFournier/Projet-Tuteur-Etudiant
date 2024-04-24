@@ -143,7 +143,9 @@
                     <div class="row align-items-center h-8"> <!-- Colonne 8h00 a 8h50 de l'horaire -->
 
                         <div class="col-2 h-100 p-0">
-                            <div class="card h-100 justify-content-center"></div>   
+                            <div class="card h-100 justify-content-center">
+                                <p> {{$CalNote[0]->LundiP1}} </p>
+                            </div>   
                         </div>
 
                         <div class="col-2 h-100 p-0">
