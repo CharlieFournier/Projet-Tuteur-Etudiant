@@ -54,7 +54,7 @@
     <div class="h-89">
     <div class="container-fluid h-100">
         <div class="row text-center h-100">    
-            <div class="col-10">
+            <div class="col-12">
             @yield('contenu')
             </div>
         </div>

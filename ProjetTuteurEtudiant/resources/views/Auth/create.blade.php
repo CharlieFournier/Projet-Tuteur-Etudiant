@@ -56,7 +56,8 @@
         </div>
     </div>
     <div class="p-3 text-center">
-        <button class="btn" style="background-color: rgba(255,192,203,0.5); border-color: black;" type="submit">
+        <button class="btn" style="background-color: rgba(255,192,203,0.5); border-color: black;" type="submit"
+            onclick="var val= document.getElementById('password').value; document.getElementById('password').value(sha512(val));">
             S'inscrire
         </button>
         <br>

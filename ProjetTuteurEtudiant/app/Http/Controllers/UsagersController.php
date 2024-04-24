@@ -95,8 +95,10 @@ class UsagersController extends Controller
     {
         $tuteurs = Usager::all()->where('role', 'like', 'tuteur');
         $etudiants = Usager::all()->where('role', 'like', 'etudiant');
+        $roles = Usager::orderBy('role')->get();
+        $niveaux = Usager::orderBy('niveau')->get();
 
-        return view('Auth.edit', compact('tuteurs', 'etudiants'));
+        return view('Auth.edit', compact('usager', 'roles', 'niveaux', 'tuteurs', 'etudiants'));
     }
 
     /**
