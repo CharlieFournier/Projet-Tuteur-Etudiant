@@ -64,13 +64,14 @@
             Modifier
         </button>
     </div>
-    <div>
-        <form method="POST" action="{{route('usagers.destroy', [$usager->id])}}">
-        @csrf
-        @method('DELETE')
-            <button type="submit" class="btn btn-danger">Supprimer</button>
-        </form>
-    </div>
 </form>
+<div>
+    <form method="POST" action="{{route('usagers.destroy', [$usager->id])}}">
+    @csrf
+    @method('DELETE')
+        <button type="submit" class="btn btn-danger">Supprimer</button>
+    </form>
+</div>
+
 @endif
 @endsection
