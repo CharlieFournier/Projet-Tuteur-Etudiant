@@ -12,6 +12,10 @@
 @csrf
 @method('PATCH')
     <div class="row p-3">
+    <div class=" col-4">
+            <label class="form-label" for="matricule">Matricule : </label>
+            <input class="form-control" type="text" id="matricule" name="matricule" value="{{old('matricule', $usager->matricule)}}">
+        </div>
         <div class=" col-4">
             <label class="form-label" for="prenom">Prénom : </label>
             <input class="form-control" type="text" id="prenom" name="prenom" value="{{old('prenom', $usager->prenom)}}">

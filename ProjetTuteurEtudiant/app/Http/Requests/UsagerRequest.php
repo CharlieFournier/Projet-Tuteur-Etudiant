@@ -23,11 +23,12 @@ class UsagerRequest extends FormRequest
     {
         return 
         [
-            'matricule' => 'required|min:3',
+            'matricule' => 'required',
             'nom' => 'required|min:3',
             'prenom' => 'required|min:3',
             'email' => 'required|min:5',
             'password' => 'required|min:3',
+            'nb_heures' => 'required',
         ];
     }
 
@@ -35,8 +36,7 @@ class UsagerRequest extends FormRequest
     {
         return 
         [
-            
-            'matricule.required' => 'Erreur nom_usager',
+            'matricule.required' => 'Erreur matricule',
             'nom.required' => 'Erreur nom ',
             'prenom.required' => 'Erreur prenom',
             'email.required' => 'Erreur email',

@@ -119,7 +119,7 @@ class UsagersController extends Controller
             log::debug('avant save');
             $id->save();
             log::debug('END');
-            return redirect()->route('usagers.index')->with('message', "Modification de " . $id->matricule . " réussi!");
+            return redirect()->route('usagers.index')->with('message', "Modification de " . $id->nom . " réussi!");
         }
         catch(\Throwable $e)
         {

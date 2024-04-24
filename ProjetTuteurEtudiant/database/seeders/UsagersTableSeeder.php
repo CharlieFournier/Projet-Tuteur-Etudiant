@@ -18,7 +18,7 @@ class UsagersTableSeeder extends Seeder
         DB::table('usagers')->insert([
             [
                 'id' => 1,
-                'matricule' => 1234567,
+                'matricule' => '1234567',
                 'prenom' => 'Bananes',
                 'nom'=> 'Meow',
                 'email'=> 'meowmeow@hotmail.com',
@@ -32,7 +32,7 @@ class UsagersTableSeeder extends Seeder
             ],
             [
                 'id' => 2,
-                'matricule' => 8675439,
+                'matricule' => '8675439',
                 'prenom' => 'Framboise',
                 'nom'=> 'Meow',
                 'email'=> 'meowmeow@hotmail.com',
@@ -46,7 +46,7 @@ class UsagersTableSeeder extends Seeder
             ],
             [
                 'id' => 3,
-                'matricule' => 8693922,
+                'matricule' => '8693922',
                 'prenom' => 'Mangues',
                 'nom'=> 'Meow',
                 'email'=> 'meowmeow@hotmail.com',
@@ -60,7 +60,7 @@ class UsagersTableSeeder extends Seeder
             ],
             [
                 'id' => 4,
-                'matricule' => 2052524,
+                'matricule' => '2052524',
                 'prenom' => 'Meow',
                 'nom'=> 'Meow',
                 'email'=> 'meowmeow@hotmail.com',
@@ -74,7 +74,7 @@ class UsagersTableSeeder extends Seeder
             ],
             [
                 'id' => 5,
-                'matricule' => 7894562,
+                'matricule' => '7894562',
                 'prenom' => 'Orange',
                 'nom'=> 'Meow',
                 'email'=> 'meowmeow@hotmail.com',
@@ -88,7 +88,7 @@ class UsagersTableSeeder extends Seeder
             ],
             [
                 'id' => 6,
-                'matricule' => 6543217,
+                'matricule' => '6543217',
                 'prenom' => 'Grenade',
                 'nom'=> 'Meow',
                 'email'=> 'meowmeow@hotmail.com',
@@ -102,7 +102,7 @@ class UsagersTableSeeder extends Seeder
             ],
             [
                 'id' => 7,
-                'matricule' => 6547227,
+                'matricule' => '6547227',
                 'prenom' => 'Pommes',
                 'nom'=> 'Meow',
                 'email'=> 'meowmeow@hotmail.com',

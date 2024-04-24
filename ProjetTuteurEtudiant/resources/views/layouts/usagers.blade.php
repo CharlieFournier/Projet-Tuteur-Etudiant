@@ -19,19 +19,19 @@
             <nav class="main-nav">
                 <form method="post" action="{{route('login')}}">
                 @csrf
-                    <button type="submit" class="btn btn-info text-white">Projet Tutorat</button>
+                    <button type="submit" class="btn" style="background-color: #284886; color: white;">Projet Tutorat</button>
                 </form>
             </nav>
             <nav class="sub">
                 <form method="get" action="{{route('Requetes.index')}}">
                 @csrf
-                    <button type="submit" class="btn btn-info text-white">Acceuil</button>
+                    <button type="submit" class="btn" style="background-color: #284886; color: white;">Acceuil</button>
                 </form>
             </nav>
             <nav class="sub">
                 <form method="get" action="">
                 @csrf
-                    <button type="submit" class="btn btn-info text-white">Page Profil</button>
+                    <button type="submit" class="btn" style="background-color: #284886; color: white;">Page Profil</button>
                 </form> 
             </nav>
             <nav class="sub">
@@ -43,7 +43,7 @@
             <nav class="sub">
                 <form method="get" action="{{route('usagers.index')}}">
                 @csrf
-                    <button type="submit" class="btn btn-info text-white">Usagers</button>
+                    <button type="submit" class="btn" style="background-color: #284886; color: white;">Usagers</button>
                 </form> 
             </nav>
         </div>
