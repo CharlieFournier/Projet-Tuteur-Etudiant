@@ -43,3 +43,7 @@ Route::get('/connexion',
 
 Route::get('/inscription', 
 [UsersController::class, 'create'])->name('users.create');
+
+Route::get('/commentaire', 
+[UsersController::class, 'commentaire'])->name('users.commentaire');
+

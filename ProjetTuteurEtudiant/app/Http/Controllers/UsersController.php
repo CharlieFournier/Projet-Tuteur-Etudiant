@@ -13,6 +13,10 @@ class UsersController extends Controller
     {
         //
     }
+    public function commentaire()
+    {
+        return view('users.commentaire');
+    }
 
     /**
      * Show the form for creating a new resource.
