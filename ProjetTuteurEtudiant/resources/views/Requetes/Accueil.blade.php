@@ -4,7 +4,7 @@
 
 @section('contenu')
 <div class="container-fluid h-100">
-    <div class="row text-center h-100">
+    <div class="row text-center h-100 AntiFlashWhite">
 
         <div class="col-10 h-100">
             <div class="row h-100">     <!-- Colonne des heures -->
@@ -287,7 +287,7 @@
 
 <!------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- -->
 
-                    <div class="row align-items-center h-4"> <!-- Colonne du midi de l'horaire -->
+                    <div class="row align-items-center h-4 Blanc"> <!-- Colonne du midi de l'horaire -->
 
                         <div class="col-2 h-100 p-0">
                             <div class="card-header h-100 justify-content-center"></div>   
@@ -307,6 +307,9 @@
 
                         <div class="col-2 h-100 p-0">
                             <div class="card-header h-100 justify-content-center"></div>
+                        </div>
+
+                        <div class="col-2 h-100 p-0 AntiFlashWhite">
                         </div>
 
                     </div>
@@ -419,7 +422,7 @@
                     </div>
 
 <!------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- -->
-                    <div class="row align-items-center h-4"> <!-- Colonne Pause 14h50 a 15h05 de l'horaire -->
+                    <div class="row align-items-center Blanc h-4"> <!-- Colonne Pause 14h50 a 15h05 de l'horaire -->
 
                         <div class="col-2 h-100 p-0">
                             <div class="card-header h-100 justify-content-center"></div>   
@@ -439,6 +442,9 @@
 
                         <div class="col-2 h-100 p-0">
                             <div class="card-header h-100 justify-content-center"></div>
+                        </div>
+
+                        <div class="col-2 h-100 p-0 AntiFlashWhite">
                         </div>
 
                     </div>
