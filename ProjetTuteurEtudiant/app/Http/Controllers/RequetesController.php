@@ -11,6 +11,7 @@ use App\Models\Etudiant;
 use App\Models\User;
 use App\Models\CalendrierJour;
 use App\Models\CalendrierNote;
+use App\Http\Controllers\Auth;
 
 class RequetesController extends Controller
 {
@@ -19,6 +20,7 @@ class RequetesController extends Controller
      */
     public function index()
     {
+        $IdUser = Auth::id();
         $tuteurs = User::all()->where('role', 'like', 'tuteur');
         $etudiants = User::all()->where('role', 'like', 'etudiant');
         $requetes = Requete::all();
