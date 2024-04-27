@@ -5,10 +5,10 @@
 @section('contenu')
 
 <div class="container-fluid h-100" >
-    <h1>Page de commentaires</h1>
+    <h1>Laissez nous vos commenaires!</h1>
 
     <div class="rating">
-    <h2>Rating</h2>
+    <h2>Évaluation</h2>
     <div class="stars">
         <span class="star">&#9733;</span>
         <span class="star">&#9733;</span>
@@ -19,10 +19,10 @@
 </div>
 
 <div class="comments">
-    <h2>Comments</h2>
-    <textarea placeholder="Write your comment here"></textarea>
-    <button onclick="submitComment()">Submit</button>
-    <div class="comment-section">
+    <h2>Commentaires</h2>
+    <textarea placeholder="Écrivez vos commentaires ici"></textarea>
+    <button onclick="submitComment()">Soumettre</button>
+    <div class="comment-section mt-3">
         <!-- Comments will be displayed here -->
     </div>
 </div>
