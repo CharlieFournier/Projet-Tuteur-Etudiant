@@ -24,7 +24,7 @@ class RequetesController extends Controller
         $IdUser = Auth::id();
         $tuteurs = User::all()->where('role', 'like', 'tuteur');
         $etudiants = User::all()->where('role', 'like', 'etudiant');
-        $Usager = User::all();
+        $Usager = Auth::user();
         $requetes = Requete::all();
         $CalJour = CalendrierJour::find($IdUser);
         $CalNote = CalendrierNote::find($IdUser);

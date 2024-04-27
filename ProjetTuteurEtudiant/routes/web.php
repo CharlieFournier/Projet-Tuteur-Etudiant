@@ -58,7 +58,7 @@ Route::get('/usagers/{usager}',
 Route::get('/usagers', 
 [UsagersController::class, 'usagerindex'])->name('usagers.index');
 
-Route::get('/usagers/{usager}/modifier/',
+Route::get('/usagers/{matricule}/modifier/',
 [UsagersController::class, 'edit'])->name('usagers.edit');
 
 Route::patch('/usagers/{usager}/modifier',

@@ -91,8 +91,9 @@ class UsagersController extends Controller
     /**
      * Show the form for editing the specified resource.
      */
-    public function edit(Usager $usager)
+    public function edit($matricule)
     {
+        $usager = Usager::where('matricule', $matricule)->firstOrFail();
         $roles = Usager::orderBy('role')->get();
         $niveaux = Usager::orderBy('niveau')->get();
 
