@@ -25,8 +25,8 @@ class RequetesController extends Controller
         $etudiants = User::all()->where('role', 'like', 'etudiant');
         $Usager = User::all();
         $requetes = Requete::all();
-        $CalJour = CalendrierJour::all();
-        $CalNote = CalendrierNote::all();
+        $CalJour = CalendrierJour::find($IdUser);
+        $CalNote = CalendrierNote::find($IdUser);
 
 
         return view('Requetes.accueil', compact('requetes', 'tuteurs', 'etudiants','CalJour', 'CalNote', 'IdUser', 'Usager'));
