@@ -144,31 +144,31 @@
 
                         <div class="col-2 h-100 p-0">
                             <div class="card h-100 justify-content-center">
-                                <p> {{$Usager[$IdUser]->jours->notes->LundiP1}} </p>
+                                <p> {{$IdUser}} </p>
                             </div>   
                         </div>
 
                         <div class="col-2 h-100 p-0">
                             <div class="card h-100 justify-content-center">
-                                <p> {{$CalNote[($IdUser -1)]->MardiP1}} </p>
+                                <p>  </p>
                                 </div> 
                         </div>
 
                         <div class="col-2 h-100 p-0">
                             <div class="card h-100 justify-content-center">
-                                <p> {{$CalNote[($IdUser -1)]->MercrediP1}} </p>
+                                <p>  </p>
                             </div>
                         </div> 
 
                         <div class="col-2 h-100 p-0">
                             <div class="card h-100 justify-content-center">
-                                <p> {{$CalNote[($IdUser -1)]->JeudiP1}} </p>
+                                <p>  </p>
                             </div>
                         </div> 
 
                         <div class="col-2 h-100 p-0">
                             <div class="card h-100 justify-content-center">
-                                <p> {{$CalNote[($IdUser -1)]->VendrediP1}} </p>
+                                <p> </p>
                             </div>
                         </div>
 
@@ -180,7 +180,7 @@
 
                         <div class="col-2 h-100 p-0">
                             <div class="card h-100 justify-content-center">
-                                <p> {{$Usager[$IdUser]->nom}} </p>
+                               <p>  </p>
                             </div>   
                         </div>
 
