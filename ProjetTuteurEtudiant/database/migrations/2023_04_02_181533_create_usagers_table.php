@@ -11,18 +11,17 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::create('users', function (Blueprint $table) {
-            $table->integer('matricule')->primary(); 
+        Schema::create('usagers', function (Blueprint $table) {
+            $table->id();
+            $table->string('matricule', '255'); 
             $table->string('prenom','30');
             $table->string('nom','30');
             $table->string('email', '255');
-            $table->string('pwd', '255');
+            $table->string('password', '255');
             $table->double('nb_heures');
             $table->string('role', '255');
             $table->string('niveau', '255');
-
-            //$table->foreignId('grade_id');
-            //$table->foreignId('matiere_id');
+            $table->rememberToken();
             $table->timestamps();
         });
     }
@@ -32,6 +31,6 @@ return new class extends Migration
      */
     public function down(): void
     {
-        Schema::dropIfExists('users');
+        Schema::dropIfExists('usagers');
     }
 };
