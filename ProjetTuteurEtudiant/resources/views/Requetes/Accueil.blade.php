@@ -8,6 +8,9 @@
 
         <div class="col-10 h-100">
             <div class="row h-100">     <!-- Colonne des heures -->
+
+            <div class="row justify-content-center align-items-center h-4"></div>
+
                 <div class="col-2 h-100">
 
                     <div class="row justify-content-center align-items-center h-4"></div>
@@ -591,6 +594,7 @@
                         </ul>
 
                 </div>
+            </div>
             </div>
         </div>
     </div>
