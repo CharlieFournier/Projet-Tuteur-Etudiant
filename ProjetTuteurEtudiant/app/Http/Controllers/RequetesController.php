@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Support\Facades\Log;
 use App\Http\Controllers\Controller;
+use Illuminate\Support\Facades\Auth;
 use Illuminate\Http\Request;
 use App\Models\Requete;
 use App\Models\Tuteur;
@@ -11,7 +12,6 @@ use App\Models\Etudiant;
 use App\Models\User;
 use App\Models\CalendrierJour;
 use App\Models\CalendrierNote;
-use App\Http\Controllers\Auth;
 
 class RequetesController extends Controller
 {
@@ -23,12 +23,13 @@ class RequetesController extends Controller
         $IdUser = Auth::id();
         $tuteurs = User::all()->where('role', 'like', 'tuteur');
         $etudiants = User::all()->where('role', 'like', 'etudiant');
+        $Usager = User::all();
         $requetes = Requete::all();
         $CalJour = CalendrierJour::all();
         $CalNote = CalendrierNote::all();
 
 
-        return view('Requetes.accueil', compact('requetes', 'tuteurs', 'etudiants','CalJour', 'CalNote'));
+        return view('Requetes.accueil', compact('requetes', 'tuteurs', 'etudiants','CalJour', 'CalNote', 'IdUser', 'Usager'));
     }
 
     /**

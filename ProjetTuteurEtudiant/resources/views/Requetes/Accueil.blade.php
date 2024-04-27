@@ -144,24 +144,32 @@
 
                         <div class="col-2 h-100 p-0">
                             <div class="card h-100 justify-content-center">
-                                <p> {{$CalNote[0]->LundiP1}} </p>
+                                <p> {{$Usager[$IdUser]->jours->notes->LundiP1}} </p>
                             </div>   
                         </div>
 
                         <div class="col-2 h-100 p-0">
-                            <div class="card h-100 justify-content-center"></div> 
+                            <div class="card h-100 justify-content-center">
+                                <p> {{$CalNote[($IdUser -1)]->MardiP1}} </p>
+                                </div> 
                         </div>
 
                         <div class="col-2 h-100 p-0">
-                            <div class="card h-100 justify-content-center"></div>
+                            <div class="card h-100 justify-content-center">
+                                <p> {{$CalNote[($IdUser -1)]->MercrediP1}} </p>
+                            </div>
                         </div> 
 
                         <div class="col-2 h-100 p-0">
-                            <div class="card h-100 justify-content-center"></div>
+                            <div class="card h-100 justify-content-center">
+                                <p> {{$CalNote[($IdUser -1)]->JeudiP1}} </p>
+                            </div>
                         </div> 
 
                         <div class="col-2 h-100 p-0">
-                            <div class="card h-100 justify-content-center"></div>
+                            <div class="card h-100 justify-content-center">
+                                <p> {{$CalNote[($IdUser -1)]->VendrediP1}} </p>
+                            </div>
                         </div>
 
                     </div>
@@ -171,7 +179,9 @@
                     <div class="row align-items-center h-8"> <!-- Colonne 8h55 a 9h45 de l'horaire -->
 
                         <div class="col-2 h-100 p-0">
-                            <div class="card h-100 justify-content-center"></div>   
+                            <div class="card h-100 justify-content-center">
+                                <p> {{$Usager[$IdUser]->nom}} </p>
+                            </div>   
                         </div>
 
                         <div class="col-2 h-100 p-0">

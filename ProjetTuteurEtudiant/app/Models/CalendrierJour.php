@@ -13,6 +13,14 @@ class CalendrierJour extends Model // value true or false dans le tableau de dis
                                 'JeudiP1','JeudiP2','JeudiP3','JeudiP4','JeudiP5','JeudiP6','JeudiP7','JeudiP8','JeudiP9','JeudiP10',
                                 'VendrediP1','VendrediP2','VendrediP3','VendrediP4','VendrediP5','VendrediP6','VendrediP7','VendrediP8','VendrediP9','VendrediP10',
                             ];
-    protected $table = 'Calendrierjour';
+    protected $table = 'Calendrierjours';
     use HasFactory;
+
+    function jours(){
+        return $this -> belongsTo(User::class);
+    }
+
+    function notes(){
+        return $this -> hasOne(CalendrierNote::class);
+    }
 }

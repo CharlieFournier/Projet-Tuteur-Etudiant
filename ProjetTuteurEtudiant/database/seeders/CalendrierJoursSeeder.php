@@ -4,16 +4,16 @@ namespace Database\Seeders;
 
 use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
-use DB;
+use Illuminate\Support\Facades\DB;
 
-class CalendrierJourSeeder extends Seeder
+class CalendrierJoursSeeder extends Seeder
 {
     /**
      * Run the database seeds.
      */
     public function run(): void
     {
-        DB::table('calendrierjour')->insert([
+        DB::table('calendrierjours')->insert([
             [
                 'id'=> 1,
 

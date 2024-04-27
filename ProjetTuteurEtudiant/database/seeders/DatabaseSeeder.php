@@ -3,7 +3,7 @@
 namespace Database\Seeders;
 
 use Illuminate\Database\Seeder;
-use DB;
+use Illuminate\Support\Facades\DB;
 
 class DatabaseSeeder extends Seeder
 {
@@ -18,7 +18,9 @@ class DatabaseSeeder extends Seeder
         $this->call(GradesSeeder::class);
         $this->call(MatieresSeeder::class);
         $this->call(TuteursMatieresSeeder::class);
-        $this->call(CalendrierJourSeeder::class);
-        $this->call(CalendrierNoteSeeder::class);
+        $this->call(CalendrierJoursSeeder::class);
+        $this->call(CalendrierNotesSeeder::class);
+        $this->call(CalendrierJourCalendrierNoteSeeder::class);
+        $this->call(UserCalendrierJourSeeder::class);
     }
 }
