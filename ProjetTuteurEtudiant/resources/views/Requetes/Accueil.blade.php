@@ -144,13 +144,13 @@
 
                         <div class="col-2 h-100 p-0">
                             <div class="card h-100 justify-content-center">
-                                <p> {{$IdUser}} </p>
+                                <p> {{$CalNote[($IdUser-1)]->LundiP1}} </p>
                             </div>   
                         </div>
 
                         <div class="col-2 h-100 p-0">
                             <div class="card h-100 justify-content-center">
-                                <p>  </p>
+                                <p> {{ $CalNote[(($Usager[$IdUser-1]->id)-1)]->MardiP1 }} </p> <!-- changer le id pour un idCalendrierJour ou idCalendrierNotes -->
                                 </div> 
                         </div>
 

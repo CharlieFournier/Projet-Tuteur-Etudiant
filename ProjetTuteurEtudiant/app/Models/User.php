@@ -17,4 +17,8 @@ class User extends Authenticatable
     protected $fillable = ['id', 'matricule', 'prenom', 'nom', 'email', 'password', 'nb_heures', 'role', 'niveau'];
     protected $table = 'usagers';
     use HasFactory;
+
+    function jours(){
+        return $this -> belongsTo(CalendrierJour::class, 'usagers_jours', 'Usager_id', 'Calendrierjour_id');
+    }
 }

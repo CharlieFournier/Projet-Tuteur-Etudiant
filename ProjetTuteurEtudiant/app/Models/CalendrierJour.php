@@ -17,7 +17,7 @@ class CalendrierJour extends Model // value true or false dans le tableau de dis
     use HasFactory;
 
     function jours(){
-        return $this -> belongsTo(User::class);
+        return $this -> belongsTo(User::class, 'usagers_jours', 'Usager_id', 'Calendrierjour_id');
     }
 
     function notes(){
