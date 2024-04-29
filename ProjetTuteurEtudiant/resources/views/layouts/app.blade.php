@@ -39,6 +39,10 @@
                         <a class="nav-link" style="color: #FFFFFF;" href="{{route('usagers.update', [$Usager->matricule])}}">Profil</a>
                     </li>
 
+                    <li class="nav-item">
+                        <a class="nav-link" style="color: #FFFFFF;" href="#">Demandes</a>
+                    </li>
+
                 </ul>
 
             </div>

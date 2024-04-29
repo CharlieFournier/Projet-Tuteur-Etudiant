@@ -13,9 +13,9 @@ use Illuminate\Support\Facades\Route;
 use Illuminate\Http\Request;
 use App\Models\Requete;
 
-//------- Demandes d'aides -------//
+//-------Calendrier-------//
 
-Route::get('/', 
+Route::get('/Acceuil', 
 [RequetesController::class, 'index'])->name('Requetes.index');
 
 
@@ -35,12 +35,14 @@ Route::get('/accueilEtudiant/{etudiant}',
 
 Route::get('/heuresEtudiant', 
 [EtudiantsController::class, 'heures'])->name('Etudiants.heures');
+
+
 //----- Users ------//
 
-Route::get('/login', 
+Route::get('/', 
 [UsagersController::class, 'index'])->name('showLogin');
 
-Route::post('/login', 
+Route::post('/', 
 [UsagersController::class, 'login'])->name('login');
 
 Route::post('/logout', 
@@ -66,3 +68,9 @@ Route::patch('/usagers/{usager}/modifier',
 
 Route::delete('/usagers/{usager}/supprimer', 
 [UsagersController::class, 'destroy'])->name('usagers.destroy');
+
+
+// Demandes //
+
+Route::get('/createDemandes', 
+[DemandesController::class, 'create'])->name('Demandes.create');
