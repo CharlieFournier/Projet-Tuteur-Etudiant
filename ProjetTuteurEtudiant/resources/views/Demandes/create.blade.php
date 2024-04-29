@@ -24,7 +24,8 @@
             </div>
             <div class="col-4"></div>
             <div class="col-4">
-                <label for="id" class="form-label">Numero de la demande: #</label>
+                <label for="id" class="form-label">Numero de la demande: </label>
+                <label for="id" class="form-label">{{$demandes->id}}</label>
             </div>
         </div>
         <div class="row p-3">

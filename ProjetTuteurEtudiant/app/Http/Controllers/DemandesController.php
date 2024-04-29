@@ -34,7 +34,8 @@ class DemandesController extends Controller
         $Usager = Auth::user();
         $tuteurs = Usager::all()->where('role', 'like', 'tuteur');
         $matieres = Matiere::all();
-        return view('Demandes.create', compact('Usager', 'tuteurs', 'matieres'));
+        $demandes = Demande::all();
+        return view('Demandes.create', compact('Usager', 'tuteurs', 'matieres', 'demandes'));
     }
 
     /**
