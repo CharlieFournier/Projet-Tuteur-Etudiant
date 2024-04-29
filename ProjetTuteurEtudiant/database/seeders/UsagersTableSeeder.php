@@ -113,6 +113,20 @@ class UsagersTableSeeder extends Seeder
                 'remember_token' => Str::random(10),
                 'created_at' => now(),
                 'updated_at' => now(),
+            ],
+            [
+                'id' => 8,
+                'matricule' => '6548347',
+                'prenom' => 'Bleuet',
+                'nom'=> 'Meow',
+                'email'=> 'meowmeow@hotmail.com',
+                'password'=> Hash::make('meow1234'),
+                'nb_heures'=> 12,
+                'role' => 'tuteur',
+                'niveau' => 'enseignant',
+                'remember_token' => Str::random(10),
+                'created_at' => now(),
+                'updated_at' => now(),
             ]
         ]);
     }
