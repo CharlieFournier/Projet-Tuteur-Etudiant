@@ -26,7 +26,7 @@
     <div class="row p-3">
         <div>
             <label class="form-label" for="email">Address Courriel : </label>
-            <input class="form-control" type="text" id="email" name="email">
+            <input class="form-control" type="email" id="email" name="email">
         </div>
         <div class="">
             <label class="form-label" for="password">Password : </label>

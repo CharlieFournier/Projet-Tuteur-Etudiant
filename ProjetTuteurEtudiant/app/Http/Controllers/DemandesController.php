@@ -2,8 +2,19 @@
 
 namespace App\Http\Controllers;
 
-use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
+use App\Http\Requests\UsagerRequest;
+use Illuminate\Support\Facades\Hash;
+use Illuminate\Support\Facades\Auth;
+use Illuminate\Support\Facades\Session;
+use Illuminate\Support\Facades\Log;
+use Illuminate\Support\Facades\DB;
+
+use App\Models\Usager;
+use App\Models\Etudiant;
+use App\Models\Tuteur;
+use App\Models\Demande;
+use App\Models\Matiere;
 
 class DemandesController extends Controller
 {
@@ -20,7 +31,10 @@ class DemandesController extends Controller
      */
     public function create()
     {
-        //
+        $Usager = Auth::user();
+        $tuteurs = Usager::all()->where('role', 'like', 'tuteur');
+        $matieres = Matiere::all();
+        return view('Demandes.create', compact('Usager', 'tuteurs', 'matieres'));
     }
 
     /**

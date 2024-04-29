@@ -5,12 +5,13 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
-class Demande extends Model
+class Matiere extends Model
 {
+    protected $table = 'matieres';
     use HasFactory;
 
-    public function type()
+    public function matieres()
     {
-        return $this->belongsTo('App\Models\Type');
+        return $this->hasMany(Demande::class, 'matiere_id');
     }
 }
