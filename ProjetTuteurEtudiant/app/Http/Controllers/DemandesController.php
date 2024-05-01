@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Http\Requests\DemandeRequest;
 use Illuminate\Http\Request;
 use App\Http\Requests\UsagerRequest;
 use Illuminate\Support\Facades\Hash;
@@ -41,9 +42,17 @@ class DemandesController extends Controller
     /**
      * Store a newly created resource in storage.
      */
-    public function store(Request $request)
+    public function store(DemandeRequest $request)
     {
-        //
+        try{
+            $usagers = new Usager($request->all());
+            $usagers->save();
+        }
+        catch(\Throwable $e) {
+            Log::debug($e);
+            return redirect()->route('Requetes.index')->withErrors(['ajout n\'a pas fonctionné']);
+        }
+        return redirect()->route('Requetes.index');
     }
 
     /**
