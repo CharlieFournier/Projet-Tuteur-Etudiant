@@ -13,7 +13,8 @@ use Illuminate\Support\Facades\DB;
 use App\Models\Usager;
 use App\Models\Etudiant;
 use App\Models\Tuteur;
-
+use App\Models\CalendrierJour;
+use App\Models\CalendrierNote;
 
 class UsagersController extends Controller
 {
@@ -69,8 +70,10 @@ class UsagersController extends Controller
      */
     public function store(UsagerRequest $request)
     {
+        $hashedPassword = Hash::make($request->password);
         try{
             $usagers = new Usager($request->all());
+            $usagers->password = $hashedPassword;
             $usagers->save();
 
             $calendrierJour = new CalendrierJour();
@@ -83,7 +86,7 @@ class UsagersController extends Controller
             Log::debug($e);
             return redirect()->route('Requetes.index')->withErrors(['ajout n\'a pas fonctionné']);
         }
-        return redirect()->route('Requetes.index');
+        return redirect()->route('login');
     }
 
     /**
