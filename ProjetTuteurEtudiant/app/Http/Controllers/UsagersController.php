@@ -72,6 +72,12 @@ class UsagersController extends Controller
         try{
             $usagers = new Usager($request->all());
             $usagers->save();
+
+            $calendrierJour = new CalendrierJour();
+            $calendrierJour->save();
+            $calendrierNote = new CalendrierNote();
+            $calendrierNote->save();
+            
         }
         catch(\Throwable $e) {
             Log::debug($e);
