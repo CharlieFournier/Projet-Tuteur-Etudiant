@@ -9,7 +9,7 @@
         <h1>Faire une demande pour un tuteur</h1><hr/>
     </div>
 
-    <form method="post" action="{{route('usagers.store')}}">
+    <form method="post" action="{{route('Demandes.store')}}">
     @csrf
         <div class="row p-3">
             <div class="col-4">
@@ -30,7 +30,7 @@
         <div class="row p-3">
             <div class="col-4">
                 <label for="matieres" class="form-label">Choisir la matière: </label>
-                <select name="matieres" id="matieres" class="form-control">
+                <select name="matieres" id="matiere_id" class="form-control">
                     @foreach ($matieres as $matiere)
                         <option value="{{$matiere->id}}">{{$matiere->nom_matiere}}</option>
                     @endforeach

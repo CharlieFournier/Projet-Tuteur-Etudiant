@@ -17,8 +17,8 @@ return new class extends Migration
             $table->string('commentaire', "255");
             $table->Integer('temps_requis');
             $table->datetime('periode');
-            $table->foreignId('matiere_id');
-            $table->foreignId('tuteur_id');
+            $table->foreignId('matiere_id')->nullable();
+            $table->foreignId('tuteur_id')->nullable();
             $table->timestamps();
         });
     }

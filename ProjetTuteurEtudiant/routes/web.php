@@ -74,3 +74,6 @@ Route::delete('/usagers/{usager}/supprimer',
 
 Route::get('/createDemandes', 
 [DemandesController::class, 'create'])->name('Demandes.create');
+
+Route::post('/createDemandes', 
+[DemandesController::class, 'store'])->name('Demandes.store');

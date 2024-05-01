@@ -10,12 +10,14 @@ use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Session;
 use Illuminate\Support\Facades\Log;
 use Illuminate\Support\Facades\DB;
+use Illuminate\Support\Facades\Schema;
 
 use App\Models\Usager;
 use App\Models\Etudiant;
 use App\Models\Tuteur;
 use App\Models\Demande;
 use App\Models\Matiere;
+use App\Models\CalendrierJour;
 
 class DemandesController extends Controller
 {
@@ -36,7 +38,10 @@ class DemandesController extends Controller
         $tuteurs = Usager::all()->where('role', 'like', 'tuteur');
         $matieres = Matiere::all();
         $demandes = Demande::all();
-        return view('Demandes.create', compact('Usager', 'tuteurs', 'matieres', 'demandes'));
+        $columns = DB::getSchemaBuilder()->getColumnListing('calendrierjours');
+        return view('Demandes.create', compact('Usager', 'tuteurs', 'matieres', 'demandes', 'columns'));
+
+        
     }
 
     /**
@@ -45,8 +50,8 @@ class DemandesController extends Controller
     public function store(DemandeRequest $request)
     {
         try{
-            $usagers = new Usager($request->all());
-            $usagers->save();
+            $demandes = new Demande($request->all());
+            $demandes->save();
         }
         catch(\Throwable $e) {
             Log::debug($e);
