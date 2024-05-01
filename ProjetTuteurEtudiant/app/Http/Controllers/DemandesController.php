@@ -26,7 +26,9 @@ class DemandesController extends Controller
      */
     public function index()
     {
-        //
+        $Usager = Auth::user();
+
+        return view('Demandes.index', compact('Usager'));
     }
 
     /**

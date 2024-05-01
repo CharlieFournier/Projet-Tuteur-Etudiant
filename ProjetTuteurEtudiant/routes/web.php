@@ -72,6 +72,9 @@ Route::delete('/usagers/{usager}/supprimer',
 
 // Demandes //
 
+Route::get('/indexDemandes', 
+[DemandesController::class, 'index'])->name('Demandes.index');
+
 Route::get('/createDemandes', 
 [DemandesController::class, 'create'])->name('Demandes.create');
 
