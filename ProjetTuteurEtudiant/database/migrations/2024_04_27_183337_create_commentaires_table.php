@@ -13,8 +13,6 @@ return new class extends Migration
     {
         Schema::create('commentaires', function (Blueprint $table) {
             $table->id();
-            $table->string('prenom','30');
-            $table->string('nom','30');
             $table->string('commentaire','255');
             //add date?
             $table->timestamps();

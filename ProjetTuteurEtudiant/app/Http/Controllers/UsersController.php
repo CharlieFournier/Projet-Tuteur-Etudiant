@@ -2,7 +2,14 @@
 
 namespace App\Http\Controllers;
 
+use Illuminate\Support\Facades\Log;
+use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
+use App\Models\Requete;
+use App\Models\Tuteur;
+use App\Models\Etudiant;
+use App\Models\User;
+use App\Models\commentaire;
 
 class UsersController extends Controller
 {
@@ -39,7 +46,16 @@ class UsersController extends Controller
      */
     public function store(Request $request)
     {
-        return view('requetes.index');
+        try{
+            $commentaires = new Commentaire($request->all());
+            $commentaires->save();
+
+        }
+        catch(\Throwable $e) {
+            Log::debug($e);
+            return redirect()->route('commentaire')->withErrors(['ajout n\'a pas fonctionné']);
+        }
+        return redirect()->route('Requetes.index');
     }
 
     /**
