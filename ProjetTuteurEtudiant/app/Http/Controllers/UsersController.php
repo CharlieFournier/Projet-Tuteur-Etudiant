@@ -39,7 +39,7 @@ class UsersController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        return view('requetes.index');
     }
 
     /**

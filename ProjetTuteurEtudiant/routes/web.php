@@ -47,3 +47,7 @@ Route::get('/inscription',
 Route::get('/commentaire', 
 [UsersController::class, 'commentaire'])->name('users.commentaire');
 
+
+Route::post('/commentaire', 
+[UsersController::class, 'store'])->name('commentaires.store');
+

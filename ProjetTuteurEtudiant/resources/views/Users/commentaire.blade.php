@@ -4,27 +4,26 @@
 
 @section('contenu')
 
-<div class="container-fluid h-100" >
-    <h1>Laissez nous vos commenaires!</h1>
 
-    <div class="rating">
-    <h2>Évaluation</h2>
-    <div class="stars">
-        <span class="star">&#9733;</span>
-        <span class="star">&#9733;</span>
-        <span class="star">&#9733;</span>
-        <span class="star">&#9733;</span>
-        <span class="star">&#9733;</span>
+<div class="container-fluid h-100">
+
+    <h1>Laissez nous vos commentaires!</h1>
+    <div class="row h-100">
+        
+
+        <form method="post" action="{{route('commentaires.store')}}">
+            @csrf
+            <label>Commentaire:</label> <br>
+            <textarea class="form-control" style="width:30%; height:30%;" placeholder="selon moi..."></textarea>
+            <br>
+            <button class="btn" style="background-color: rgba(255,192,203,0.5); border-color: black;" type="submit">
+                Envoyer
+                
+            </button>
+
+        </form>
+
     </div>
 </div>
 
-<div class="comments">
-    <h2>Commentaires</h2>
-    <textarea placeholder="Écrivez vos commentaires ici"></textarea>
-    <button onclick="submitComment()">Soumettre</button>
-    <div class="comment-section mt-3">
-        <!-- Comments will be displayed here -->
-    </div>
-</div>
-</div>
 @endsection
