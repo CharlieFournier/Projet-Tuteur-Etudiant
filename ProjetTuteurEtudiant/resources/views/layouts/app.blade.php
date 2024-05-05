@@ -36,7 +36,21 @@
                     </li>
 
                     <li class="nav-item">
+                        <form method="get" action="{{route('Demandes.create')}}">
+                        @csrf
+                            <button type="submit" style="color: #FFFFFF;" class="btn">Faire une demande</button>
+                        </form>
+                    </li>
+
+                    <li class="nav-item">
                         <a class="nav-link" style="color: #FFFFFF;" href="{{route('usagers.update', [$Usager->matricule])}}">Profil</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <form method="post" action="{{route('logout')}}">
+                        @csrf
+                            <button type="submit" style="color: #FFFFFF;" class="btn">Logout</button>
+                        </form>
                     </li>
 
                 </ul>
