@@ -8,28 +8,41 @@ html, body {
     width:  100%;
 }
 
-table {
-    margin: auto; /* Aligning the table to the center */
-    width: 80%; /* Adjust as needed */
-    border-collapse: collapse;
-    background-color: #04477F; /* Bleu foncé */
-    color: #d9d9d9; /* Blanc doux */
+.rating {
+    margin-bottom: 20px;
 }
 
-th {
-    background-color: #04477F; /* Bleu foncé */
-    color: #d9d9d9; /* Blanc doux */
-    text-align: left;
-    padding: 8px;
-    border: 1px solid #000; /* Bordure noire */
+.stars {
+    color: gold;
 }
 
-td {
-    background-color: #0E5AA7; /* Bleu moyen */
-    color: #d9d9d9; /* Blanc doux */
-    border: 1px solid #000; /* Bordure noire */
-    text-align: left;
-    padding: 8px;
+.star {
+    color: gray; /* Couleur de base pour toutes les étoiles */
+    cursor: pointer;
+    display: inline-block;
+    transform: scale(2);
+    width: 20px;
+}
+
+.star.active {
+    color: gold; /* Couleur pour les étoiles sélectionnées */
+}
+
+.comments {
+    margin-top: 20px;
+}
+
+textarea {
+    width: 100%;
+    height: 100px;
+    margin-bottom: 10px;
+}
+
+.comment-section {
+    border: 1px solid #ccc;
+    padding: 10px;
+    max-height: 200px;
+    overflow-y: auto;
 }
 
 .h-50 {
@@ -79,3 +92,8 @@ td {
 .m-0 {
     margin:0px;
 }
+
+.input-element{
+    height: 40% !important;
+    width: 40%;
+    }
