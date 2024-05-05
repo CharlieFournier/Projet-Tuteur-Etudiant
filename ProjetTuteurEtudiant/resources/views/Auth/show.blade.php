@@ -16,7 +16,7 @@
             <br>
             <h5>Role: {{$usager->role}}</h5>
             <h5>Niveau: {{$usager->niveau}}</h5>
-            <a href="{{route('usagers.edit', [$usager])}}" class="btn btn-danger">
+            <a href="{{route('usagers.edit', [$usager->matricule])}}" class="btn btn-danger">
                 Editer l'utilisateur
             </a>
         </div>

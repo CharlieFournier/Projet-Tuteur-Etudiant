@@ -7,7 +7,7 @@ use App\Http\Controllers\AdminController;
 use App\Http\Controllers\EtudiantsController;
 use App\Http\Controllers\RequetesController;
 use App\Http\Controllers\TuteursController;
-use App\Http\Controllers\UsersController;
+use App\Http\Controllers\UsagersController;
 
 use Illuminate\Support\Facades\Route;
 use Illuminate\Http\Request;

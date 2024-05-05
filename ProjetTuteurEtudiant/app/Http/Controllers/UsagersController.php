@@ -112,36 +112,32 @@ class UsagersController extends Controller
     /**
      * Update the specified resource in storage.
      */
-    public function update(UsagerRequest $request, Usager $id)
+    public function update(UsagerRequest $request, Usager $usager)
     {
-        log::debug('loop update debut');
         try
         {
-            $id->matricule = $request->matricule;
-            $id->nom = $request->nom;
-            $id->prenom = $request->prenom;
-            $id->email = $request->email;
-            $id->password = $request->password;
-            $id->nb_heures = $request->nb_heures;
-            $id->role = $request->role;
-            $id->niveau = $request->niveau;
 
-            log::debug('avant save');
-            $id->save();
-            log::debug('END');
-            return redirect()->route('usagers.index')->with('message', "Modification de " . $id->nom . " réussi!");
+            $usager->update([
+                'matricule' => $request->matricule,
+                'nom' => $request->nom,
+                'prenom' => $request->prenom,
+                'email' => $request->email,
+                'password' => Hash::make($request->password),
+                'nb_heures' => $request->nb_heures,
+                'role' => $request->role,
+                'niveau' => $request->niveau,
+            ]);
+
+            return redirect()->route('usagers.index')->with('message', "Modification de " . $usager->nom . " réussi!");
         }
         catch(\Throwable $e)
         {
             Log::debug($e);
-            return redirect()->route('usagers.index')->withErrors(['la modification n\'a pas fonctionné']);
+            return redirect()->route('usagers.index')->withErrors(["la modification n'a pas fonctionné"]);
         }
-        return redirect()->route('usagers.index');
     }
 
-    /**
-     * Remove the specified resource from storage.
-     */
+
     public function destroy(string $id)
     {
         try
