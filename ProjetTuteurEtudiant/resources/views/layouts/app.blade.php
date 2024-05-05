@@ -36,6 +36,13 @@
                     </li>
 
                     <li class="nav-item">
+                        <form method="get" action="{{route('Demandes.index')}}">
+                        @csrf
+                            <button type="submit" style="color: #FFFFFF;" class="btn">liste des demandes</button>
+                        </form>
+                    </li>
+
+                    <li class="nav-item">
                         <form method="get" action="{{route('Demandes.create')}}">
                         @csrf
                             <button type="submit" style="color: #FFFFFF;" class="btn">Faire une demande</button>
@@ -46,10 +53,10 @@
                         <a class="nav-link" style="color: #FFFFFF;" href="{{route('usagers.update', [$Usager->matricule])}}">Profil</a>
                     </li>
 
-                    <li class="nav-item">
+                    <li class="nav-item justify-content-end">
                         <form method="post" action="{{route('logout')}}">
                         @csrf
-                            <button type="submit" style="color: #FFFFFF;" class="btn">Logout</button>
+                            <button type="submit" class="btn btn-danger">Logout</button>
                         </form>
                     </li>
 

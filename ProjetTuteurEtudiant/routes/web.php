@@ -8,6 +8,7 @@ use App\Http\Controllers\EtudiantsController;
 use App\Http\Controllers\RequetesController;
 use App\Http\Controllers\TuteursController;
 use App\Http\Controllers\UsagersController;
+use App\Http\Controllers\DemandesController;
 
 use Illuminate\Support\Facades\Route;
 use Illuminate\Http\Request;
@@ -80,3 +81,6 @@ Route::get('/createDemandes',
 
 Route::post('/createDemandes', 
 [DemandesController::class, 'store'])->name('Demandes.store');
+
+Route::delete('/SupprimerDemandes/{id}', 
+[DemandesController::class, 'destroy'])->name('demandes.destroy');

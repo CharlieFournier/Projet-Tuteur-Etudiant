@@ -27,8 +27,9 @@ class DemandesController extends Controller
     public function index()
     {
         $Usager = Auth::user();
+        $demandes = Demande::all();
 
-        return view('Demandes.index', compact('Usager'));
+        return view('Demandes.index', compact('Usager', 'demandes'));
     }
 
     /**
@@ -91,6 +92,18 @@ class DemandesController extends Controller
      */
     public function destroy(string $id)
     {
-        //
+        try
+        {
+            $demandes = Demande::findOrFail($id);
+
+            $demandes->delete();
+            return redirect()->route('Demandes.index')->with('message', "Suppression de " . $demandes->id . " réussi!");
+        }
+        catch(\Throwable $e)
+        {
+            Log::debug($e);
+            return redirect()->route('Demandes.index')->withErrors(['la suppression n\'a pas fonctionné']); 
+        }
+            return redirect()->route('Demandes.index');
     }
 }
